@@ -55,6 +55,11 @@ const images = {
   commentbot: require("../assets/commentbot.jpg"),
   bookquote: require("../assets/bookquote.jpg"),
   vtaiwan: require("../assets/vtaiwan.png"),
+  jsdc_endorsement: require("../assets/jsdc_endorsement.png"),
+  jsdc_invite: require("../assets/jsdc_invite.png"),
+  jsdc_majority: require("../assets/jsdc_majority.png"),
+  write: require("../assets/write.jpg"),
+  vote: require("../assets/vote.jpg"),
   // fergusonTweeters: require("../assets/fergusonTweeters.jpg"),
 };
 
@@ -69,271 +74,308 @@ export default class Presentation extends React.Component {
     return (
       <Spectacle theme={theme}>
         <Deck transition={["fade", "slide"]} progress="number" transitionDuration={500}>
-          {
-            /*************
-              INTRODUCTION
-            **************/
-          }
-          <Slide bgColor="primary">
-            <Heading size={1} fit caps lineHeight={2}>
-              pol.is in Taiwan
-            </Heading>
-            <Heading lineHeight={1.3} size={5}>
-              Bridging the gap between
-              public discourse & public policy
-            </Heading>
-            <Text lineHeight={2} bold textColor="tertiary">Taipei, g0v 2016</Text>
-          </Slide>
-          <Slide
-            notes={`
-              Gerard Hauser, writing about Habermas' conceptualization of the public
-              sphere, wrote the following. At the core, we're all here because of our
-              belief in and will to improve democracy. I'm here to talk about
-              the role of the public sphere, public opinion, and relationship between
-              people and government. We'll also talk about that efficiency bit.
-            `}>
-            <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
-              {`
-                Democratic governance rests on the capacity of and opportunity for
-                citizens to engage in enlightened debate. Although deciding public
-                policy through argument has little to recommend it in terms of
-                efficiency, the purpose of public deliberation, as Aristotle recognized
-                in his Rhetoric, is not efficient government but educated judgement.
-              `}
-            </Text>
-            <Link
-              textColor="white"
-              textSize={24}
-              href="https://books.google.com/books?id=7UuCvESagZsC&lpg=PA82&ots=dNr1WC9gmm">
-              {"Gerald Hauser, on Habermas"}
-            </Link>
-          </Slide>
-          <Slide
-            notes={`
-              But, of course, there's a problem.
-              We're all too afraid to hope that this can be fixed.
-              The thing is, it hasn't been like this for that long, let's
-              take a step back - we've never been here before.
-              * the more enlightened members of all communities are discouragedfrom engaging in common spaces.
-            `}>
-            <Image width="80%" src={images.commentbot.replace("/", "")}/>
-          </Slide>
-          <Slide>
-            <iframe
-              width="853"
-              height="480"
-              src="https://www.youtube.com/embed/PJiRijiLwbQ?rel=0&amp;showinfo=0"
-              frameBorder="0"
-              allowFullScreen>
-            </iframe>
-          </Slide>
-          {
-            /*************
-              HOOK
-            **************/
-          }
-          <Slide
-            notes={`
-              how it was different, what it's grown into with vTaiwan
-            `}
-            bgImage={images.parisCafe.replace("/", "")} bgDarken={.7}>
-            <Heading size={3} lineHeight={1.3}>
-              I want to tell you a story about a time that thousands of people arguing on the internet in real-time went well.
-            </Heading>
-          </Slide>
-          <Slide notes={`todo`}>
-            <Image width="70%" src={images.confFlameWar.replace("/", "")}/>
-          </Slide>
-          <Slide notes={`todo`}>
-            <Heading lineHeight={1.3}> EVERY OPINION IS DATA </Heading>
-          </Slide>
-          <Slide notes={`todo`}>
-            <Heading lineHeight={1.3}> REACTIONS ARE TOO </Heading>
-          </Slide>
+{
+  /*************
+    INTRODUCTION
+  **************/
+}
+<Slide bgColor="primary">
+  <Heading size={1} fit caps lineHeight={2}>
+    pol.is in Taiwan
+  </Heading>
+  <Heading lineHeight={1.3} size={5}>
+    Bridging the gap between
+    public discourse & public policy
+  </Heading>
+  <Text lineHeight={2} bold textColor="tertiary">Taipei, g0v 2016</Text>
+</Slide>
 
-          {
-            /*************
-              PROBLEM
-            **************/
-          }
-          <Slide notes={`
-              whoa, we're informed, we're online, we're ready, we're communicating a lot
-              `}>
-            <Image width="90%" src={images.fergusonexplosion.replace("/", "")}/>
-          </Slide>
+{
+  /*************
+    PROBLEM
+  **************/
+}
+<Slide
+  notes={``}
+  >
+  <Heading size={3} lineHeight={1.3}>
+    What does a crowd think?
+  </Heading>
+</Slide>
+{/*
+  public opinion is a problem in three parts...
+  the government isn't set up to receive it (consultation)
+  the people aren't incentivized to give it (surveys / consultation)
+  and the places people do express themselves render poor forms of it (social media graph)
+  */}
+<Slide notes={`
+    60,000 at Emirates stadium, visualize it because it's hard to online
+    a news site might get 10x that in a morning, but not engaging, just reading
+  `}>
+  <Image width="90%" src={images.emirates.replace("/", "")}/>
+</Slide>
+<Slide
+  notes={``}
+  >
+  <Heading size={3} lineHeight={1.3}>
+    Qualitative feedback is extremely time consuming
+  </Heading>
+</Slide>
+{
+  /*************
+    Consultation
+  **************/
+}
+<Slide
+  notes={`
+    Stuffy, Boring, Meaningless, Slow, Despairing, Rote, Uninteresting,
+    Predictable, Forced but most damningly, serial. Regardless if a public
+    comment box is being sifted through one by one by an unfortunate
+    staffer, or one person at a time stands up at a consultation, the
+    process is not designed to encourage feedback.
+    `}
+    bgImage={images.consultation.replace("/", "")}/>
+  {
+    /*************
+      Surveys
+    **************/
+  }
+  <Slide
+    notes={`
+      maybe something about inadequacy of surveys here
+    `}
+    >
+    <Heading size={3} lineHeight={1.3}>
+      Quantitative feedback / surveys tell you only what you already know
+    </Heading>
+  </Slide>
+  <Slide
+    notes={`
+      social media *is* where we're talking... but it's problematic
 
-          <Slide
-            notes={`
-              These are images from Stanford researcher Emma Pierson.
-              These groups are distinct, not just in their identity, but in that
-              they are for the most part not seeing what the other groups are saying.
-              The filter bubble is quantifiable.
+      we should not be doing sentiment analysis on social media
+      and saying it's what the country thinks.
 
-            `}
-          bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
-            <Heading
-              size={3}
-              lineHeight={1.3}>
-                The filter bubble is quantifiable.
-            </Heading>
-          </Slide>
-          <Slide
-            notes={`
-              What you are seeing is 2.5 days of Twitter activity in which
-              different 'communities' or, literally, parts of the Twitter graph
-              talk to themselves about the same topics.
-            `}>
-            <Image src={images.shoutyourabortion.replace("/", "")}/>
-          </Slide>
-          <Slide
-            notes={`
-              Instead of one conversation occurring where ideas bump up against
-              each other, the conversation retreats into thousands of self
-              selected networks of likeminded people. This isn't a bad thing.
-              People feel safe with people they relate to and we don't need to
-              change that. We do that in the physical world just as much.
-              Facebook and twitter seem like one place, but they are not. They
-              are a graph, and there are neighborhoods with different assumptions,
-              values and patterns.
-            `}>
-            <Image src={images.shoutyourabortion2.replace("/", "")}/>
-          </Slide>
-          <Slide notes={``}>
-            <Image width="90%" src={images.emirates.replace("/", "")}/>
-          </Slide>
+      it's very problematic that there's no interaction with others' ideas.
+      moderates are excluded from these groups, and they are going to say
+      common sense things grounded in reality
 
-          <Slide notes={`
-            Emergent opinion. maybe a majority of
-            americans think we need to move beyond parties. maybe that's the surprise
-            waiting when we can see majority opinion. no one will ask that in a poll.
-            no one asks likert scale questions 'on a scale of one to ten how likely do you think it is the
-            company is going to tank?' in polls, we ask only the questions we are prepared
-            to handle the answers to.
-            `}>
-            <Heading> Emergent opinion over surveys </Heading>
-          </Slide>
+      no one broadcasts the moderate. they retweet the ideas that define their group.
+      `}
+    >
+    <Heading size={3} lineHeight={1.3}>
+      Basing sentiment analysis on social media is problematic
+    </Heading>
+  </Slide>
+<Slide
+  notes={`
+    These are images from Stanford researcher Emma Pierson.
+    These groups are distinct, not just in their identity, but in that
+    they are for the most part not seeing what the other groups are saying.
+    The filter bubble is quantifiable.
+  `}
+bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
+  <Heading
+    size={3}
+    lineHeight={1.3}>
+      The filter bubble is quantifiable.
+  </Heading>
+</Slide>
+<Slide
+  notes={`
+    What you are seeing is 2.5 days of Twitter activity in which
+    different 'communities' or, literally, parts of the Twitter graph
+    talk to themselves about the same topics.
+  `}>
+  <Image src={images.shoutyourabortion.replace("/", "")}/>
+</Slide>
+<Slide
+  notes={`
+    Instead of one conversation occurring where ideas bump up against
+    each other, the conversation retreats into thousands of self
+    selected networks of likeminded people. This isn't a bad thing.
+    People feel safe with people they relate to and we don't need to
+    change that. We do that in the physical world just as much.
+    Facebook and twitter seem like one place, but they are not. They
+    are a graph, and there are neighborhoods with different assumptions,
+    values and patterns.
 
+    these are not clusters that emerge from interaction with other people's ideas
+    they are clusters that emerge from affinity, following your own. so there's
+    no chance in any of the interactions to agree. You have, from the outset,
+    pre-determined a shouting match.
+  `}>
+  <Image src={images.shoutyourabortion2.replace("/", "")}/>
+</Slide>
+<Slide
+  notes={`Solve this, solve democracy in lots of other settings.`}
+  >
+  <Heading size={3} lineHeight={1.3}>
+    These are problems in every organization, just biggest in government.
+  </Heading>
+</Slide>
 
-          {
-            /*************
-              IMPLICATIONS OF PROBLEM
-            **************/
-          }
-          <Slide notes={`todo`} bgImage={images.sunflowerRev.replace("/", "")}/>
-          <Slide notes={`
-              people are discouraged. they don't show up to this.
-            `}>
-            <Image width="90%" src={images.oldcrowd.replace("/", "")}/>
-          </Slide>
-          <Slide
-            notes={`
-               Stuffy, Boring, Meaningless, Slow, Despairing, Rote, Uninteresting,
-               Predictable, Forced but most damningly, serial. Regardless if a public
-               comment box is being sifted through one by one by an unfortunate
-               staffer, or one person at a time stands up at a consultation, the
-               process is not designed to encourage feedback.
-            `}
-            bgImage={images.consultation.replace("/", "")}/>
+{
+  /*************
+    Case Study
+  **************/
+}
+<Slide
+  notes={`
+    lots of people, strongly divergent views, in real-time
+    what it grew into here in Taiwan, the implications for other places.
+    overview of pol.is for those of you who are not familiar
+  `}
+  >
+  <Heading size={3} lineHeight={1.3}>
+    I want to tell you about a time that arguing on the internet went well.
+  </Heading>
+</Slide>
+<Slide notes={`200 comment thread, fast and furious, here are the last comments`}>
+  <Image style={{borderRadius: 5}} width="60%" src={images.confFlameWar.replace("/", "")}/>
+</Slide>
 
-          {
-            /*************
-              PRELUDE/INTERLUDE
-            **************/
-          }
-          <Slide notes={`todo`}>
-            <Image width="100%" src={images.assembly.replace("/", "")}/>
-          </Slide>
-          {
-            /*************
-              SOLUTION
-            **************/
-          }
-          <Slide notes={`
-            By following and sharing, you are moving information from people who you agree with to
-            people who agree with you.
-            what if we bake in listening to the information design instead?
-            what are the actions? what information structues do they create?
-            how does that impact behavior and dispersal? following creates graphs.
-              `}>
-            <Image width="90%" src={images.everyByEvery.replace("/", "")}/>
-          </Slide>
-          <Slide notes={`
-              ** probably move this point but, we need to find the right
-              information structures to get what we want - if we want division
-              let's do voting and graphs. that will get us division. if we want
-              to transcend that we need to allow individual actors to move in
-              different ways with constraints that are appropriate to the culture
-              (ie saving face or elder deference) and the medium (ie., not paper anymore)
-              ** if it's bad enough, enough people won't participate that the number
-              of people this tool CAN handle will be left.
-            `}>
-            <Image width="90%" src={images.matrix.replace("/", "")}/>
-          </Slide>
-          <Slide notes={`todo`}>
-            <Heading> What is the algorithm of productive public discourse? </Heading>
-          </Slide>
-          <Slide notes={`todo`}>
-            <Heading> 1. Hear everyone out / gather perspectives & dimensions </Heading>
-          </Slide>
-          <Slide notes={`todo`}>
-            <Heading> 2. See what everyone thinks about each perspective & dimension </Heading>
-          </Slide>
-          <Slide notes={`todo`}>
-            <Heading> Per issue, every opinion * every opinion on each opinion </Heading>
-          </Slide>
-          <Slide notes={`todo`}>
-            <Heading> {`We're running a really expensive algorithm`} </Heading>
-          </Slide>
-          <Slide notes={`todo`}>
-            <Heading> {`Is it worth it?`} </Heading>
-          </Slide>
-          <Slide notes={`todo`}>
-            <Heading> {`Absolutely.`} </Heading>
-          </Slide>
-          <Slide notes={`todo`}>
-            <Heading> Opinions are heuristics for interests. </Heading>
-          </Slide>
-          <Slide notes={`todo`}>
-            <Heading> How do we not have a map of interests? Data. </Heading>
-          </Slide>
-          {
-            /*************
-              vTaiwan as a model
-            **************/
-          }
+<Slide notes={`what did this mean? well everyone came into the conversation and if they had something to say, they could write it, just like on facebook or any other platform`}>
+  <Image style={{borderRadius: 5}} width="100%" src={images.write.replace("/", "")}/>
+</Slide>
+<Slide notes={`and we have a different set of responses, agree and disagree`}>
+  <Image style={{borderRadius: 5}} width="100%" src={images.vote.replace("/", "")}/>
+</Slide>
 
-          <Slide notes={`
-              Vital, Undirected, Chaotic, Aimless, Authentic, Surprising,
-              Interesting, Unpredictable, Emergent
-              * what THEY have done - listened, put into practice
-            `} bgImage={images.parisCafe.replace("/", "")} bgDarken={.7}>
-            <Heading
-              size={3}
-              lineHeight={1.3}>
-                People speaking freely in public spaces is a kind of magic.
-            </Heading>
-          </Slide>
-          <Slide notes={`todo`}>
-            <Image width="100%" src={images.vtaiwan.replace("/", "")}/>
-          </Slide>
+<Slide notes={`todo`}>
+  <Heading lineHeight={1.3}> Real-time Machine Learning </Heading>
+</Slide>
+<Slide notes={`todo`}>
+  <Heading lineHeight={1.3}> {`Clustering (formation of groups)`} </Heading>
+</Slide>
 
-          {
-            /*************
-              EPILOGUE
-            **************/
-          }
-          <Slide notes={`
-              The spirit of public discourse is alive throughout the ages
-              and while we have an enormous challenge to reconstitute it at
-              such extraordinary scales, we have an enormous responsibility to
-              do so. If we can succeed, I believe we have an opportunity to do it
-              in a way that our forebears could only have dreamed.
-            `}>
-            <Image width="90%" src={images.pnyx.replace("/", "")}/>
-          </Slide>
-          <Slide notes={`todo`}
-            bgImage={images.tain.replace("/", "")}>
-          </Slide>
+<Slide notes={`Allowing Qihoo employees to share tech isn't an endorsement`}>
+  <Image style={{borderRadius: 5}} width="80%" src={images.jsdc_endorsement.replace("/", "")}/>
+</Slide>
+<Slide notes={``}>
+  <Image style={{borderRadius: 5}} width="80%" src={images.jsdc_invite.replace("/", "")}/>
+</Slide>
+<Slide notes={`
+    A magical thing happened -
+    broad consensus on a community building statement of mutual respect and trust
+    it colors the other statements. it's now respectful disagreement
+
+    so why doesn't this happen more often?
+  `}>
+  <Image style={{borderRadius: 5}} width="80%" src={images.jsdc_majority.replace("/", "")}/>
+</Slide>
+
+{
+  /*************
+    Algorithm of public opinion / dis
+  **************/
+}
+<Slide notes={`todo`}>
+  <Heading> What is the algorithm of productive public discourse? </Heading>
+</Slide>
+{
+  /*************
+    ASSEMBLY
+  **************/
+}
+<Slide notes={`todo`}>
+  <Image width="100%" src={images.assembly.replace("/", "")}/>
+</Slide>
+<Slide notes={`todo`}>
+  <Heading size={3}> 1. Hear everyone out / gather perspectives & dimensions as data (Qualitative) </Heading>
+</Slide>
+<Slide notes={`todo`}>
+  <Heading size={3}> 2. See what everyone thinks about each perspective & dimension (Quantitative) </Heading>
+</Slide>
+<Slide notes={`todo`}>
+  <Heading size={3}> Per issue, every opinion * every opinion on each opinion </Heading>
+</Slide>
+<Slide notes={`is it ok? can we make it better?`}>
+  <Heading> {`This is all very time consuming`} </Heading>
+</Slide>
+<Slide
+  notes={`
+    At the core, we're all here because of our
+    belief in and will to improve democracy. I'm here to talk about
+    the role of the public sphere, public opinion, and relationship between
+    people and government. this is a worthy problem to address.
+  `}>
+  <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
+    {`
+      Democratic governance rests on the capacity of and opportunity for
+      citizens to engage in enlightened debate. Although deciding public
+      policy through argument has little to recommend it in terms of
+      efficiency, the purpose of public deliberation, as Aristotle recognized
+      in his Rhetoric, is not efficient government but educated judgement.
+    `}
+  </Text>
+  <Link
+    textColor="white"
+    textSize={24}
+    href="https://books.google.com/books?id=7UuCvESagZsC&lpg=PA82&ots=dNr1WC9gmm">
+    {"Gerald Hauser, On Habermas & the Public Sphere"}
+  </Link>
+</Slide>
+<Slide notes={`
+  By following and sharing, you are moving information from people who you agree with to
+  people who agree with you.
+  what if we bake in listening to the information design instead?
+  what are the actions? what information structues do they create?
+  how does that impact behavior and dispersal? following creates graphs.
+    `}>
+  <Image width="90%" src={images.everyByEvery.replace("/", "")}/>
+</Slide>
+<Slide notes={`
+    ** probably move this point but, we need to find the right
+    information structures to get what we want - if we want division
+    let's do voting and graphs. that will get us division. if we want
+    to transcend that we need to allow individual actors to move in
+    different ways with constraints that are appropriate to the culture
+    (ie saving face or elder deference) and the medium (ie., not paper anymore)
+    ** if it's bad enough, enough people won't participate that the number
+    of people this tool CAN handle will be left.
+
+    parallellize! everyone writes and votes at the same time, analysis
+    done automatically. people are lazy. if we want people to eat
+    more vegetables (high quality, bottom up feedback) let's
+    get them a personal chef.
+  `}>
+  <Image width="100%" src={images.matrix.replace("/", "")}/>
+</Slide>
+
+{
+  /*************
+    The Assembly / Ecclesia
+  **************/
+}
+<Slide notes={`these problems weren't present in `}>
+  <Image width="100%" src={images.assembly.replace("/", "")}/>
+</Slide>
+
+<Slide notes={`
+  polis is just a medium, it takes people who want a better world to use it
+  that, meaning all of you, is what inspires us
+`} bgImage={images.sunflowerRev.replace("/", "")}/>
+
+{
+  /*************
+    vTaiwan as a model
+  **************/
+}
+
+<Slide notes={`vTaiwan is a model for the world GET A QUOTE`}>
+  <Image width="100%" src={images.vtaiwan.replace("/", "")}/>
+</Slide>
+
+<Slide notes={`
+    because you're not only leading the world in the implementation of digital
+    democracy practices, you're doing it in the shadow of a regime that is moving
+    full speed in the other direction. I have the deepest respect for your
+    efforts in this regard and am humbled to able to contribute.
+  `}
+    bgImage={images.tain.replace("/", "")}>
+  </Slide>
+
         </Deck>
       </Spectacle>
     );
