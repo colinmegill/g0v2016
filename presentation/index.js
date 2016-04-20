@@ -96,7 +96,7 @@ export default class Presentation extends React.Component {
   **************/
 }
 <Slide
-  notes={``}
+  notes={`question fundamental to democracy`}
   >
   <Heading size={3} lineHeight={1.3}>
     What does a crowd think?
@@ -339,6 +339,17 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
     done automatically. people are lazy. if we want people to eat
     more vegetables (high quality, bottom up feedback) let's
     get them a personal chef.
+
+    so what does this get you? it gets you a matrix. and all those ones
+    and zeros maybe seem about as useful as... but the fact is that you
+    have run a kind of compression or encryption algorithm, an encoding you have transferred the
+    state of the crowd's opinions into a data structure that statistical
+    operations can be run on. and that is a very powerful thing to do.
+    our analysis that we show you is only one thing that can be done
+    with a matrix.
+
+    an interesting side effect is that these structures can be merged and
+    combined with more voting
   `}>
   <Image width="100%" src={images.matrix.replace("/", "")}/>
 </Slide>
@@ -355,6 +366,8 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
 <Slide notes={`
   polis is just a medium, it takes people who want a better world to use it
   that, meaning all of you, is what inspires us
+
+  turning raw crowd energy
 `} bgImage={images.sunflowerRev.replace("/", "")}/>
 
 {
@@ -363,7 +376,9 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
   **************/
 }
 
-<Slide notes={`vTaiwan is a model for the world GET A QUOTE`}>
+<Slide notes={`into legislative impact
+    vTaiwan is a model for the world
+    GET A QUOTE`}>
   <Image width="100%" src={images.vtaiwan.replace("/", "")}/>
 </Slide>
 
