@@ -200,10 +200,16 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
     are a graph, and there are neighborhoods with different assumptions,
     values and patterns.
 
+    this isn't necessarily a bad thing - it's just intra group, not inter group.
+
     these are not clusters that emerge from interaction with other people's ideas
     they are clusters that emerge from affinity, following your own. so there's
     no chance in any of the interactions to agree. You have, from the outset,
     pre-determined a shouting match.
+
+    we need to find the right
+    information structures to get what we want - if we want division
+    let's do graphs. that will get us division.
   `}>
   <Image src={images.shoutyourabortion2.replace("/", "")}/>
 </Slide>
@@ -290,16 +296,11 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
 <Slide notes={`todo`}>
   <Heading size={3}> Per issue, every opinion * every opinion on each opinion </Heading>
 </Slide>
-<Slide notes={`is it ok? can we make it better?`}>
+<Slide notes={`is it ok? can pol.is make it better?`}>
   <Heading> {`This is all very time consuming`} </Heading>
 </Slide>
 <Slide
-  notes={`
-    At the core, we're all here because of our
-    belief in and will to improve democracy. I'm here to talk about
-    the role of the public sphere, public opinion, and relationship between
-    people and government. this is a worthy problem to address.
-  `}>
+  notes={`time consuming`}>
   <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
     {`
       Democratic governance rests on the capacity of and opportunity for
@@ -326,31 +327,18 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
   <Image width="90%" src={images.everyByEvery.replace("/", "")}/>
 </Slide>
 <Slide notes={`
-    ** probably move this point but, we need to find the right
-    information structures to get what we want - if we want division
-    let's do voting and graphs. that will get us division. if we want
-    to transcend that we need to allow individual actors to move in
-    different ways with constraints that are appropriate to the culture
-    (ie saving face or elder deference) and the medium (ie., not paper anymore)
-    ** if it's bad enough, enough people won't participate that the number
-    of people this tool CAN handle will be left.
-
     parallellize! everyone writes and votes at the same time, analysis
     done automatically. people are lazy. if we want people to eat
     more vegetables (high quality, bottom up feedback) let's
     get them a personal chef.
 
     so what does this get you? it gets you a matrix. and all those ones
-    and zeros maybe seem about as useful as... but the fact is that you
-    have run a kind of compression or encryption algorithm, an encoding you have transferred the
+    and zeros may not seem more useful than everyone talking at once in a confused way... but the fact is that you
+    have run a kind of compression algorithm on the crowd's perspectives, an encoding you have transferred the
     state of the crowd's opinions into a data structure that statistical
     operations can be run on. and that is a very powerful thing to do.
-    our analysis that we show you is only one thing that can be done
-    with a matrix.
-
-    an interesting side effect is that these structures can be merged and
-    combined with more voting
-  `}>
+    pol.is' analysis that you see is only one thing that can be done
+    with this matrix.`}>
   <Image width="100%" src={images.matrix.replace("/", "")}/>
 </Slide>
 
@@ -359,15 +347,17 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
     The Assembly / Ecclesia
   **************/
 }
-<Slide notes={`these problems weren't present in `}>
+<Slide notes={`Ecclesia`}>
   <Image width="100%" src={images.assembly.replace("/", "")}/>
 </Slide>
 
 <Slide notes={`
   polis is just a medium, it takes people who want a better world to use it
-  that, meaning all of you, is what inspires us
+  that, meaning all of you, is what inspires us.
 
-  turning raw crowd energy
+  turning raw crowd energy into meaningful feedback --> vTaiwan.
+  Making this scale and character crowd energy and feedback a daily, weekly, monthly occurrance.
+  Make it sustainable
 `} bgImage={images.sunflowerRev.replace("/", "")}/>
 
 {
@@ -378,7 +368,7 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
 
 <Slide notes={`into legislative impact
     vTaiwan is a model for the world
-    GET A QUOTE`}>
+    Quote / discuss with Audrey`}>
   <Image width="100%" src={images.vtaiwan.replace("/", "")}/>
 </Slide>
 
