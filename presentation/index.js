@@ -142,11 +142,11 @@ export default class Presentation extends React.Component {
   }
   <Slide
     notes={`
-      maybe something about inadequacy of surveys here
+      tell you about the dimensions you know already
     `}
     >
     <Heading size={3} lineHeight={1.3}>
-      Quantitative feedback / surveys tell you only what you already know
+      Quantitative feedback (traditional surveying) stifles emergent behavior
     </Heading>
   </Slide>
   <Slide
