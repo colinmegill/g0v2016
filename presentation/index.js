@@ -60,6 +60,11 @@ const images = {
   jsdc_majority: require("../assets/jsdc_majority.png"),
   write: require("../assets/write.jpg"),
   vote: require("../assets/vote.jpg"),
+  buzzfeedGuardian: require("../assets/buzzfeedGuardian.gif"),
+  parliament: require("../assets/sunflowerParliament.jpg"),
+  athensNumbered: require("../assets/athensNumbered.jpg"),
+  athensFromAbove: require("../assets/athensFromAbove.jpg"),
+
   // fergusonTweeters: require("../assets/fergusonTweeters.jpg"),
 };
 
@@ -76,10 +81,10 @@ export default class Presentation extends React.Component {
         <Deck transition={["fade", "slide"]} progress="number" transitionDuration={500}>
 {
   /*************
-    INTRODUCTION
+    Welcome slide
   **************/
 }
-<Slide bgColor="primary">
+<Slide notes={`thank you to clkao, audrey and the gov zero team for having me`} bgColor="primary">
   <Heading size={1} fit caps lineHeight={2}>
     pol.is in Taiwan
   </Heading>
@@ -92,30 +97,48 @@ export default class Presentation extends React.Component {
 
 {
   /*************
-    PROBLEM
+    What does a crowd think?
   **************/
 }
 <Slide
-  notes={`question fundamental to democracy`}
-  >
+  notes={`
+    this is the question our company has been trying to address with the product pol.is
+    which many of you are familiar with ---
+
+    it's our hope that giving a technological answer that makes it simple and fast
+    to answer this question will mean those in a position of power see the answer
+    to the question more often ---
+
+    so as an organization you could say our company is concerned with
+    infrastructure for democratic behavior, part of gov zero's function as well ---
+
+    `}>
   <Heading size={3} lineHeight={1.3}>
     What does a crowd think?
   </Heading>
 </Slide>
-{/*
-  public opinion is a problem in three parts...
-  the government isn't set up to receive it (consultation)
-  the people aren't incentivized to give it (surveys / consultation)
-  and the places people do express themselves render poor forms of it (social media graph)
-  */}
-<Slide notes={`
-    60,000 at Emirates stadium, visualize it because it's hard to online
-    a news site might get 10x that in a morning, but not engaging, just reading
+
+<Slide
+  bgImage={images.emirates.replace("/", "")}
+  notes={`
+    so let's begin with a crowd. This one is
+    60,000 at Emirates stadium --
+
+    visualize it because it's hard to think about online
+    you may be reading a news article with 10x that in a morning
+
+    Let's talk about why this is a hard problem
   `}>
-  <Image width="90%" src={images.emirates.replace("/", "")}/>
 </Slide>
 <Slide
-  notes={``}
+  notes={`
+    There are two options. Go into the population, or ask the population to come to you. ---
+
+    Going into the crowd is best / requires no technology,
+    but it's very expensive and has many steps. investigation, ethnography, planning
+    what parts of the population you will send researchers to interview ---
+
+  `}
   >
   <Heading size={3} lineHeight={1.3}>
     Qualitative feedback is extremely time consuming
@@ -128,13 +151,29 @@ export default class Presentation extends React.Component {
 }
 <Slide
   notes={`
-    Stuffy, Boring, Meaningless, Slow, Despairing, Rote, Uninteresting,
-    Predictable, Forced but most damningly, serial. Regardless if a public
-    comment box is being sifted through one by one by an unfortunate
-    staffer, or one person at a time stands up at a consultation, the
-    process is not designed to encourage feedback.
+    Asking the crowd to show up in person is inconvenient ---
+
+    Stuffy, Boring, Slow, Predictable outcomes, ---
+
+    not going to serialize that stadium through this interface. people know that ---
     `}
     bgImage={images.consultation.replace("/", "")}/>
+{
+  /*************
+    Sunflower takeover
+  **************/
+}
+<Slide
+  notes={`
+    As evidence that the democratic process isn't designed for massive feedback,
+    sometimes the stadium shows up ---
+
+    Sometimes several hundred thousand people show up when you didn't
+    ask them to, and then you find out exactly what they think. But this is rare
+    and not always constructive, and not sustainable. usually means something
+    has broken down. the government would love to not do research like this.
+    `}
+    bgImage={images.parliament.replace("/", "")}/>
   {
     /*************
       Surveys
@@ -142,79 +181,127 @@ export default class Presentation extends React.Component {
   }
   <Slide
     notes={`
-      tell you about the dimensions you know already
+      define the dimensions at the outset ---
+
+      puts those dimensions onto the population rather than letting
+      the population define the dimensions ---
+
+      does not facilitate emergence
     `}
     >
     <Heading size={3} lineHeight={1.3}>
-      Quantitative feedback (traditional surveying) stifles emergent behavior
+      Quantitative feedback (traditional surveying) scales, straightjackets
     </Heading>
   </Slide>
+  {
+    /*************
+      Social media
+    **************/
+  }
   <Slide
     notes={`
-      social media *is* where we're talking... but it's problematic
+      there is a new way of figuring out what the crowd thinks ---
 
-      we should not be doing sentiment analysis on social media
-      and saying it's what the country thinks.
+      social media *is* where we're talking ---
 
-      it's very problematic that there's no interaction with others' ideas.
-      moderates are excluded from these groups, and they are going to say
-      common sense things grounded in reality
-
-      no one broadcasts the moderate. they retweet the ideas that define their group.
+      analyzing it is problematic first and simply because you need a data scientist to
+      extract the insights, and second because of some specific attributes
+      of what exactly it is we're broadcasting on social media
       `}
     >
     <Heading size={3} lineHeight={1.3}>
       Basing sentiment analysis on social media is problematic
     </Heading>
   </Slide>
+{
+  /*************
+    Emma's work
+  **************/
+}
 <Slide
   notes={`
-    These are images from Stanford researcher Emma Pierson.
-    These groups are distinct, not just in their identity, but in that
-    they are for the most part not seeing what the other groups are saying.
+    So let's say you do have a data scientist ---
+
+    The following images produced by Stanford researcher and Rhodes Scholar Emma Pierson. ---
+
+    These are liberal and conservative twitter users talking about Ferguson ---
+
+    They are ignoring each other ---
+
+    the unit of social media is the individual, which makes a reply to a
+    community a reply to a person, which is very heavy, hard to
+    come off not as an attack.
+
+    the unit of interaction is affinity (person or idea) ---
+
+    what emerges from these rules is a graph. ---
+
     The filter bubble is quantifiable.
   `}
-bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
-  <Heading
-    size={3}
-    lineHeight={1.3}>
-      The filter bubble is quantifiable.
-  </Heading>
+  bgImage={images.fergusonTweeters.replace("/", "")} />
+<Slide
+
+  notes={`
+    does this pattern repeat? ---
+
+    2.5 days of Twitter activity ---
+
+    different 'communities' or, literally, parts of the Twitter graph
+    talk amongst themselves about the same topics. ---
+
+    they are clusters that emerge from affinity, following your own. You are
+    broadcasting ideas from people you agree with to people who agree with you. ---
+  `}>
+  <Image width={"70%"} src={images.shoutyourabortion.replace("/", "")}/>
 </Slide>
 <Slide
-  notes={`
-    What you are seeing is 2.5 days of Twitter activity in which
-    different 'communities' or, literally, parts of the Twitter graph
-    talk to themselves about the same topics.
-  `}>
-  <Image src={images.shoutyourabortion.replace("/", "")}/>
-</Slide>
+notes={`
+  Publishers are reaching both communities with articles, special role.
+  polis is moving forward with publishers who are trying to move beyond
+  vitriol on the comment threads below their articles and better serve
+  this unique purpose of providing common ground, mediation and moderation
+  `}
+  bgImage={images.buzzfeedGuardian.replace("/", "")} />
 <Slide
   notes={`
     Instead of one conversation occurring where ideas bump up against
     each other, the conversation retreats into thousands of self
-    selected networks of likeminded people. This isn't a bad thing.
+    selected networks of likeminded people. ---
+
+    This isn't a bad thing. ---
+
     People feel safe with people they relate to and we don't need to
-    change that. We do that in the physical world just as much.
-    Facebook and twitter seem like one place, but they are not. They
-    are a graph, and there are neighborhoods with different assumptions,
-    values and patterns.
+    change that. We do that in the physical world just as much. ---
+
+    Facebook and twitter seem like one place, but they are not. ---
+
+    They are graphs, and there are neighborhoods with different assumptions,
+    values and patterns. ---
 
     this isn't necessarily a bad thing - it's just intra group, not inter group.
-
-    these are not clusters that emerge from interaction with other people's ideas
-    they are clusters that emerge from affinity, following your own. so there's
-    no chance in any of the interactions to agree. You have, from the outset,
-    pre-determined a shouting match.
-
-    we need to find the right
-    information structures to get what we want - if we want division
-    let's do graphs. that will get us division.
-  `}>
-  <Image src={images.shoutyourabortion2.replace("/", "")}/>
+    social media overall not a great place for argumentation
+  `}
+  bgImage={images.shoutyourabortion2.replace("/", "")}>
 </Slide>
+
 <Slide
-  notes={`Solve this, solve democracy in lots of other settings.`}
+notes={`
+  what we want less about discovery more about productive discussions ---
+
+  From Audrey's piece: "Social media encourages impulsive, instant-gratified
+  expression of emotional sympathy among like minded individuals. However,
+  real world activism requires deepening this
+  into bonds of empathy in orer to enable shared reflections among
+  individuals with diverse backgrounds."
+  `}
+>
+<Heading size={3} lineHeight={1.3}>
+We need to find the right information architecture to get the outcomes we want
+</Heading>
+</Slide>
+
+<Slide
+  notes={`solve here it's the most complex with most edge cases, general solution`}
   >
   <Heading size={3} lineHeight={1.3}>
     These are problems in every organization, just biggest in government.
@@ -244,14 +331,18 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
 <Slide notes={`what did this mean? well everyone came into the conversation and if they had something to say, they could write it, just like on facebook or any other platform`}>
   <Image style={{borderRadius: 5}} width="100%" src={images.write.replace("/", "")}/>
 </Slide>
-<Slide notes={`and we have a different set of responses, agree and disagree`}>
+<Slide notes={`
+  and we have a different set of responses, agree and disagree, you cannot reply
+  `}>
   <Image style={{borderRadius: 5}} width="100%" src={images.vote.replace("/", "")}/>
 </Slide>
 
 <Slide notes={`todo`}>
   <Heading lineHeight={1.3}> Real-time Machine Learning </Heading>
 </Slide>
-<Slide notes={`todo`}>
+<Slide notes={`
+  polis identifies groups based on similar voting patterns, per conversation
+  `}>
   <Heading lineHeight={1.3}> {`Clustering (formation of groups)`} </Heading>
 </Slide>
 
@@ -265,8 +356,6 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
     A magical thing happened -
     broad consensus on a community building statement of mutual respect and trust
     it colors the other statements. it's now respectful disagreement
-
-    so why doesn't this happen more often?
   `}>
   <Image style={{borderRadius: 5}} width="80%" src={images.jsdc_majority.replace("/", "")}/>
 </Slide>
@@ -276,7 +365,12 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
     Algorithm of public opinion / dis
   **************/
 }
-<Slide notes={`todo`}>
+<Slide notes={`
+  fundamental unit of productive discussion
+  should be the idea, not the individual. ---
+
+  not a new idea, just a new medium and a new scale
+  `}>
   <Heading> What is the algorithm of productive public discourse? </Heading>
 </Slide>
 {
@@ -285,8 +379,24 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
   **************/
 }
 <Slide notes={`todo`}>
-  <Image width="100%" src={images.assembly.replace("/", "")}/>
+  <Image
+    style={{
+      position: "relative",
+      left: -300
+    }}
+    width="180%" src={images.assembly.replace("/", "")}/>
 </Slide>
+<Slide
+  notes={`
+    The crowd was endlessly passing through the Agora freely discussing issues
+  `}
+  bgImage={images.athensNumbered.replace("/", "")} />
+<Slide
+  notes={`
+
+  `}
+  bgImage={images.athensFromAbove.replace("/", "")} />
+
 <Slide notes={`todo`}>
   <Heading size={3}> 1. Hear everyone out / gather perspectives & dimensions as data (Qualitative) </Heading>
 </Slide>
@@ -296,7 +406,7 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
 <Slide notes={`todo`}>
   <Heading size={3}> Per issue, every opinion * every opinion on each opinion </Heading>
 </Slide>
-<Slide notes={`is it ok? can pol.is make it better?`}>
+<Slide notes={`and irrelevant. if we're going to do it at scale, has to be statistical`}>
   <Heading> {`This is all very time consuming`} </Heading>
 </Slide>
 <Slide
@@ -342,18 +452,13 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
   <Image width="100%" src={images.matrix.replace("/", "")}/>
 </Slide>
 
-{
-  /*************
-    The Assembly / Ecclesia
-  **************/
-}
-<Slide notes={`Ecclesia`}>
-  <Image width="100%" src={images.assembly.replace("/", "")}/>
-</Slide>
-
 <Slide notes={`
   polis is just a medium, it takes people who want a better world to use it
   that, meaning all of you, is what inspires us.
+
+  as a methodology for creating change I believe we can think about digital infrastructure much the same way
+  as in the physical world, where installing an airport in a remote region
+  might encourage new growth and economic activity. Make it easy, people will do it. --
 
   turning raw crowd energy into meaningful feedback --> vTaiwan.
   Making this scale and character crowd energy and feedback a daily, weekly, monthly occurrance.
@@ -373,10 +478,19 @@ bgImage={images.fergusonTweeters.replace("/", "")} bgDarken={.3}>
 </Slide>
 
 <Slide notes={`
-    because you're not only leading the world in the implementation of digital
+    leading the world in the implementation of digital
     democracy practices, you're doing it in the shadow of a regime that is moving
-    full speed in the other direction. I have the deepest respect for your
-    efforts in this regard and am humbled to able to contribute.
+    full speed in the other direction. ---
+
+    deepest respect for your efforts in this regard and am humbled to able to contribute. ---
+
+    polis has been used in other places by other groups, adoption in Taiwan
+    has been taken to its conclusion of influencing a legislative decision. ---
+
+    We can't fulfil our mission of building a
+    tool to affect policy without a people and a government willing to engage in
+    listening, and for that we thank you too. It motivates and inspires us.
+
   `}
     bgImage={images.tain.replace("/", "")}>
   </Slide>
