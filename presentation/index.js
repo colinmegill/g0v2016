@@ -64,6 +64,12 @@ const images = {
   parliament: require("../assets/sunflowerParliament.jpg"),
   athensNumbered: require("../assets/athensNumbered.jpg"),
   athensFromAbove: require("../assets/athensFromAbove.jpg"),
+  survey: require("../assets/survey.jpg"),
+  leaveComment: require("../assets/leaveComment.png"),
+  alien: require("../assets/alien.jpg"),
+  cheeseheads: require("../assets/cheeseheads.jpg"),
+  jaclyn: require("../assets/jaclyn.png")
+
 
   // fergusonTweeters: require("../assets/fergusonTweeters.jpg"),
 };
@@ -84,7 +90,7 @@ export default class Presentation extends React.Component {
     Welcome slide
   **************/
 }
-<Slide notes={`thank you to clkao, audrey and the gov zero team for having me`} bgColor="primary">
+<Slide notes={`I'm colin, thank you to clkao, audrey and the gov zero team for having me`} bgColor="primary">
   <Heading size={1} fit caps lineHeight={2}>
     pol.is in Taiwan
   </Heading>
@@ -105,12 +111,13 @@ export default class Presentation extends React.Component {
     this is the question our company has been trying to address with the product pol.is
     which many of you are familiar with ---
 
-    it's our hope that giving a technological answer that makes it simple and fast
-    to answer this question will mean those in a position of power see the answer
-    to the question more often ---
+    every org ---
 
-    so as an organization you could say our company is concerned with
-    infrastructure for democratic behavior, part of gov zero's function as well ---
+    simple and fast see the answer more often ---
+
+    our company infrastructure for democratic behavior, part of gov zero's function as well ---
+
+    have everyone shout out what they like ---
 
     `}>
   <Heading size={3} lineHeight={1.3}>
@@ -125,74 +132,51 @@ export default class Presentation extends React.Component {
     60,000 at Emirates stadium --
 
     visualize it because it's hard to think about online
-    you may be reading a news article with 10x that in a morning
+    you may be reading a news article with 10x that in a morning ---
 
-    Let's talk about why this is a hard problem
+    What are our options? ---
+
+    landscape of opinion ---
+
+    public sphere ---
+
+    midfield ---
+
+    if you are listening to this on video after the conference,
+    maybe pause and think about it - what would you do? what if everyone had a
+    mobile phone?
   `}>
 </Slide>
 <Slide
   notes={`
-    There are two options. Go into the population, or ask the population to come to you. ---
+    inconvenient ---
 
-    Going into the crowd is best / requires no technology,
-    but it's very expensive and has many steps. investigation, ethnography, planning
-    what parts of the population you will send researchers to interview ---
+    stuffy, boring ---
 
-  `}
-  >
-  <Heading size={3} lineHeight={1.3}>
-    Qualitative feedback is extremely time consuming
-  </Heading>
-</Slide>
-{
-  /*************
-    Consultation
-  **************/
-}
-<Slide
-  notes={`
-    Asking the crowd to show up in person is inconvenient ---
+    serial ---
 
-    Stuffy, Boring, Slow, Predictable outcomes, ---
-
-    not going to serialize that stadium through this interface. people know that ---
+    surveys are limiting, comment boxes don't produce useful data, interviews and other qual measures are time consumeing, pople don't show up to consultation
     `}
-    bgImage={images.consultation.replace("/", "")}/>
-{
-  /*************
-    Sunflower takeover
-  **************/
-}
+    bgDarken={.5}
+    bgImage={images.consultation.replace("/", "")}>
+    <Heading size={1} lineHeight={1.3}>
+      Inefficient
+    </Heading>
+</Slide>
 <Slide
   notes={`
-    As evidence that the democratic process isn't designed for massive feedback,
     sometimes the stadium shows up ---
 
-    Sometimes several hundred thousand people show up when you didn't
-    ask them to, and then you find out exactly what they think. But this is rare
-    and not always constructive, and not sustainable. usually means something
-    has broken down. the government would love to not do research like this.
+    find out exactly what they think. ---
+
+    infrequent, not always constructive, not sustainable ---
+
+    usually means something has broken down. ---
+
+    the government would love to not do research like this.
     `}
     bgImage={images.parliament.replace("/", "")}/>
-  {
-    /*************
-      Surveys
-    **************/
-  }
-  <Slide
-    notes={`
-      define the dimensions at the outset ---
 
-      puts those dimensions onto the population rather than letting
-      the population define the dimensions ---
-
-      does not facilitate emergence
-    `}
-    >
-    <Heading size={3} lineHeight={1.3}>
-      Quantitative feedback (traditional surveying) scales, straightjackets
-    </Heading>
-  </Slide>
   {
     /*************
       Social media
@@ -200,19 +184,20 @@ export default class Presentation extends React.Component {
   }
   <Slide
     notes={`
-      there is a new way of figuring out what the crowd thinks ---
-
       social media *is* where we're talking ---
 
-      analyzing it is problematic first and simply because you need a data scientist to
-      extract the insights, and second because of some specific attributes
-      of what exactly it is we're broadcasting on social media
+      both q & q ---
+
+      authentic ---
+
+      why is it problematic ?
       `}
     >
     <Heading size={3} lineHeight={1.3}>
-      Basing sentiment analysis on social media is problematic
+      Social media sentiment
     </Heading>
   </Slide>
+
 {
   /*************
     Emma's work
@@ -228,9 +213,7 @@ export default class Presentation extends React.Component {
 
     They are ignoring each other ---
 
-    the unit of social media is the individual, which makes a reply to a
-    community a reply to a person, which is very heavy, hard to
-    come off not as an attack.
+    ferguson very controversial about race in america --
 
     the unit of interaction is affinity (person or idea) ---
 
@@ -251,6 +234,8 @@ export default class Presentation extends React.Component {
 
     they are clusters that emerge from affinity, following your own. You are
     broadcasting ideas from people you agree with to people who agree with you. ---
+
+    discovery was the goal
   `}>
   <Image width={"70%"} src={images.shoutyourabortion.replace("/", "")}/>
 </Slide>
@@ -264,49 +249,46 @@ notes={`
   bgImage={images.buzzfeedGuardian.replace("/", "")} />
 <Slide
   notes={`
-    Instead of one conversation occurring where ideas bump up against
+    twitter not 'one place' ---
+
+    graphs, neighborhoods w/ diff assumptions, values and patterns. ---
+
+    not one conversation occurring where ideas bump up against
     each other, the conversation retreats into thousands of self
     selected networks of likeminded people. ---
 
-    This isn't a bad thing. ---
+    a reply to a community a reply to a person, which is very heavy, hard to come off not as an attack.
 
-    People feel safe with people they relate to and we don't need to
-    change that. We do that in the physical world just as much. ---
-
-    Facebook and twitter seem like one place, but they are not. ---
-
-    They are graphs, and there are neighborhoods with different assumptions,
-    values and patterns. ---
-
-    this isn't necessarily a bad thing - it's just intra group, not inter group.
-    social media overall not a great place for argumentation
   `}
   bgImage={images.shoutyourabortion2.replace("/", "")}>
 </Slide>
 
 <Slide
-notes={`
-  what we want less about discovery more about productive discussions ---
+  bgImage={images.cheeseheads.replace("/", "")}
+  bgDarken={.6}
+  notes={`
+    tribe isn't a bad thing. ---
 
-  From Audrey's piece: "Social media encourages impulsive, instant-gratified
-  expression of emotional sympathy among like minded individuals. However,
-  real world activism requires deepening this
-  into bonds of empathy in orer to enable shared reflections among
-  individuals with diverse backgrounds."
-  `}
->
-<Heading size={3} lineHeight={1.3}>
-We need to find the right information architecture to get the outcomes we want
-</Heading>
+    People feel safe with people they relate to ---
+
+    intra group, not inter group. ---
+
+    social media overall not a great place for inter-group argumentation ---
+    `}>
+  <Heading size={3} lineHeight={1.3}>
+    Tribe is inevitable
+  </Heading>
 </Slide>
 
 <Slide
-  notes={`solve here it's the most complex with most edge cases, general solution`}
-  >
-  <Heading size={3} lineHeight={1.3}>
-    These are problems in every organization, just biggest in government.
-  </Heading>
+  notes={`not accurate representation --- mob punishes viewpoints it doesn't agree with`}>
+  <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
+    {"A submission's score is simply the number of upvotes minus the number of downvotes. - Reddit FAQ"}
+  </Text>
 </Slide>
+
+
+
 
 {
   /*************
@@ -378,39 +360,58 @@ We need to find the right information architecture to get the outcomes we want
     ASSEMBLY
   **************/
 }
-<Slide notes={`todo`}>
-  <Image
-    style={{
-      position: "relative",
-      left: -300
-    }}
-    width="180%" src={images.assembly.replace("/", "")}/>
-</Slide>
 <Slide
   notes={`
+    let's go back to the classical city state, the polis, a more human scale and see what they did ---
+
     The crowd was endlessly passing through the Agora freely discussing issues
-  `}
-  bgImage={images.athensNumbered.replace("/", "")} />
-<Slide
-  notes={`
 
   `}
   bgImage={images.athensFromAbove.replace("/", "")} />
 
-<Slide notes={`todo`}>
-  <Heading size={3}> 1. Hear everyone out / gather perspectives & dimensions as data (Qualitative) </Heading>
+<Slide
+  bgImage={images.athensFromAbove.replace("/", "")}
+  bgDarken={.5}
+  notes={`
+    *as data* (Qualitative)
+    `}>
+  <Heading size={3} lineHeight={1.3}>
+    {`
+      Hear everyone out & gather perspectives
+    `}
+  </Heading>
 </Slide>
-<Slide notes={`todo`}>
-  <Heading size={3}> 2. See what everyone thinks about each perspective & dimension (Quantitative) </Heading>
-</Slide>
-<Slide notes={`todo`}>
-  <Heading size={3}> Per issue, every opinion * every opinion on each opinion </Heading>
-</Slide>
-<Slide notes={`and irrelevant. if we're going to do it at scale, has to be statistical`}>
-  <Heading> {`This is all very time consuming`} </Heading>
+
+<Slide
+  bgImage={images.athensFromAbove.replace("/", "")}
+  bgDarken={.5}
+  notes={`
+     & dimension (Quantitative)
+    `}>
+  <Heading size={3} lineHeight={1.3}>
+    {`
+      See what everyone thinks about each perspective
+    `}
+  </Heading>
 </Slide>
 <Slide
-  notes={`time consuming`}>
+  bgImage={images.athensFromAbove.replace("/", "")}
+  bgDarken={.5}
+  notes={`
+    this is roughly 'polite, fulfilling conversation'
+    `}>
+  <Heading size={3} lineHeight={1.3}>
+    {`
+      Do this for each issue
+    `}
+  </Heading>
+</Slide>
+
+<Slide
+  notes={`
+    Per issue, every opinion * every opinion on each opinion ---
+    This is all very time consuming
+    `}>
   <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
     {`
       Democratic governance rests on the capacity of and opportunity for
@@ -427,32 +428,20 @@ We need to find the right information architecture to get the outcomes we want
     {"Gerald Hauser, On Habermas & the Public Sphere"}
   </Link>
 </Slide>
-<Slide notes={`
-  By following and sharing, you are moving information from people who you agree with to
-  people who agree with you.
-  what if we bake in listening to the information design instead?
-  what are the actions? what information structues do they create?
-  how does that impact behavior and dispersal? following creates graphs.
-    `}>
-  <Image width="90%" src={images.everyByEvery.replace("/", "")}/>
-</Slide>
-<Slide notes={`
-    parallellize! everyone writes and votes at the same time, analysis
-    done automatically. people are lazy. if we want people to eat
-    more vegetables (high quality, bottom up feedback) let's
-    get them a personal chef.
 
-    so what does this get you? it gets you a matrix. and all those ones
-    and zeros may not seem more useful than everyone talking at once in a confused way... but the fact is that you
-    have run a kind of compression algorithm on the crowd's perspectives, an encoding you have transferred the
-    state of the crowd's opinions into a data structure that statistical
-    operations can be run on. and that is a very powerful thing to do.
-    pol.is' analysis that you see is only one thing that can be done
-    with this matrix.`}>
-  <Image width="100%" src={images.matrix.replace("/", "")}/>
+
+<Slide notes={`todo`}>
+  <Image
+    style={{
+      position: "relative",
+      left: -300
+    }}
+    width="180%" src={images.assembly.replace("/", "")}/>
 </Slide>
 
 <Slide notes={`
+  how do you turn a mob into a deliberative body? ---
+
   polis is just a medium, it takes people who want a better world to use it
   that, meaning all of you, is what inspires us.
 
@@ -471,11 +460,30 @@ We need to find the right information architecture to get the outcomes we want
   **************/
 }
 
-<Slide notes={`into legislative impact
+<Slide
+  bgImage={images.vtaiwan.replace("/", "")}
+  notes={`
+    into legislative impact
     vTaiwan is a model for the world
-    Quote / discuss with Audrey`}>
-  <Image width="100%" src={images.vtaiwan.replace("/", "")}/>
+    Quote / discuss with Audrey
+
+    what is so extraordinary is that sunflower has been treasured and maintained and collaborated on
+  `}>
+    <Heading size={3} lineHeight={1.3}>
+
+    </Heading>
 </Slide>
+
+<Slide
+  bgImage={images.jaclyn.replace("/", "")}
+  notes={`
+
+  `}>
+    <Heading size={3} lineHeight={1.3}>
+
+    </Heading>
+</Slide>
+
 
 <Slide notes={`
     leading the world in the implementation of digital
@@ -490,6 +498,8 @@ We need to find the right information architecture to get the outcomes we want
     We can't fulfil our mission of building a
     tool to affect policy without a people and a government willing to engage in
     listening, and for that we thank you too. It motivates and inspires us.
+
+    run a polis convo with the crowd here?
 
   `}
     bgImage={images.tain.replace("/", "")}>

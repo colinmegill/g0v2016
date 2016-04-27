@@ -165,3 +165,140 @@
   <Heading>[image of voters vs commenters] 10x people willing to listen</Heading>
 </Slide>
 // one, then 6 tiled
+
+
+
+<Slide
+  bgImage={images.athensFromAbove.replace("/", "")}
+  bgDarken={.5}
+  notes={`
+    `}>
+  <Heading size={3} lineHeight={1.3}>
+    {`
+      "Behind every technology there is a set of values informing its pursuit." - Lu Chia Hua
+    `}
+  </Heading>
+</Slide>
+
+
+<Slide
+  notes={`
+    form follows function ---
+
+    organic and authentic to the population, data rich, civil argumentation ---
+
+    want ideas to interact
+  `}>
+  <Heading size={3} lineHeight={1.3}>
+    We need to find the right information architecture to get the outcomes we want
+  </Heading>
+</Slide>
+
+
+
+
+
+
+
+{
+  /*************
+    Quantitative
+  **************/
+}
+<Slide
+  bgImage={images.survey.replace("/", "")}
+  bgDarken={.5}>
+  <Heading size={1} lineHeight={1.3}>
+    Quantitative feedback
+  </Heading>
+</Slide>
+<Slide
+  bgImage={images.survey.replace("/", "")}
+  bgDarken={.8}
+
+  notes={`
+    scales ---
+
+    dimensions predefined ---
+
+    no emergence ---
+
+    voting is like this (party enforces agenda) ---
+
+    feels scientific
+  `}
+  >
+  <Heading size={2} >
+    Straightjacket
+  </Heading>
+</Slide>
+{
+  /*************
+  Qualitiative
+  **************/
+}
+<Slide
+  bgDarken={.6}
+  bgImage={images.leaveComment.replace("/", "")}
+
+  notes={`
+    go to them, or they come to you ---
+
+    expensive, time consuming, many steps. ---
+
+    planning, interviews, research investigation, ethnography ---
+
+    generalizable?
+  `}
+  >
+  <Heading size={1} lineHeight={1.3}>
+    Qualitative feedback
+  </Heading>
+</Slide>
+<Slide
+  notes={`
+    inconvenient ---
+
+    stuffy, boring ---
+
+    serial ---
+
+    people know it
+    `}
+    bgDarken={.5}
+    bgImage={images.consultation.replace("/", "")}>
+    <Heading size={1} lineHeight={1.3}>
+      Inefficient
+    </Heading>
+</Slide>
+
+
+
+
+
+
+
+<Slide notes={`
+  By following and sharing, you are moving information from people who you agree with to
+  people who agree with you.
+  what if we bake in listening to the information design instead?
+  what are the actions? what information structues do they create?
+  how does that impact behavior and dispersal? following creates graphs.
+    `}>
+  <Image width="90%" src={images.everyByEvery.replace("/", "")}/>
+</Slide>
+<Slide notes={`
+    parallellize! everyone writes and votes at the same time, analysis
+    done automatically. people are lazy. if we want people to eat
+    more vegetables (high quality, bottom up feedback) let's
+    get them a personal chef.
+
+    so what does this get you? it gets you a matrix. and all those ones
+    and zeros may not seem more useful than everyone talking at once in a confused way... but the fact is that you
+    have run a kind of compression algorithm on the crowd's perspectives, an encoding you have transferred the
+    state of the crowd's opinions into a data structure that statistical
+    operations can be run on. and that is a very powerful thing to do.
+    pol.is' analysis that you see is only one thing that can be done
+    with this matrix.`}>
+  <Image width="100%" src={images.matrix.replace("/", "")}/>
+</Slide>
