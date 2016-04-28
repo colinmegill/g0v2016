@@ -287,18 +287,3 @@
     `}>
   <Image width="90%" src={images.everyByEvery.replace("/", "")}/>
 </Slide>
-<Slide notes={`
-    parallellize! everyone writes and votes at the same time, analysis
-    done automatically. people are lazy. if we want people to eat
-    more vegetables (high quality, bottom up feedback) let's
-    get them a personal chef.
-
-    so what does this get you? it gets you a matrix. and all those ones
-    and zeros may not seem more useful than everyone talking at once in a confused way... but the fact is that you
-    have run a kind of compression algorithm on the crowd's perspectives, an encoding you have transferred the
-    state of the crowd's opinions into a data structure that statistical
-    operations can be run on. and that is a very powerful thing to do.
-    pol.is' analysis that you see is only one thing that can be done
-    with this matrix.`}>
-  <Image width="100%" src={images.matrix.replace("/", "")}/>
-</Slide>

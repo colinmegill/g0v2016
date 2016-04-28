@@ -309,7 +309,6 @@ notes={`
 <Slide notes={`200 comment thread, fast and furious, here are the last comments`}>
   <Image style={{borderRadius: 5}} width="60%" src={images.confFlameWar.replace("/", "")}/>
 </Slide>
-
 <Slide notes={`what did this mean? well everyone came into the conversation and if they had something to say, they could write it, just like on facebook or any other platform`}>
   <Image style={{borderRadius: 5}} width="100%" src={images.write.replace("/", "")}/>
 </Slide>
@@ -318,7 +317,20 @@ notes={`
   `}>
   <Image style={{borderRadius: 5}} width="100%" src={images.vote.replace("/", "")}/>
 </Slide>
+<Slide notes={`
 
+    it gets you a matrix. and all those ones
+    and zeros may not seem more useful than everyone talking at once in a confused way... but the fact is that you
+    have run a kind of compression algorithm on the crowd's perspectives, an encoding you have transferred the
+    state of the crowd's opinions into a mathematical structure that statistical
+    operations can be run on.
+
+    parallellize! everyone writes and votes at the same time, analysis
+    done automatically. ---
+
+    `}>
+  <Image width="100%" src={images.matrix.replace("/", "")}/>
+</Slide>
 <Slide notes={`todo`}>
   <Heading lineHeight={1.3}> Real-time Machine Learning </Heading>
 </Slide>
@@ -327,7 +339,6 @@ notes={`
   `}>
   <Heading lineHeight={1.3}> {`Clustering (formation of groups)`} </Heading>
 </Slide>
-
 <Slide notes={`Allowing Qihoo employees to share tech isn't an endorsement`}>
   <Image style={{borderRadius: 5}} width="80%" src={images.jsdc_endorsement.replace("/", "")}/>
 </Slide>
