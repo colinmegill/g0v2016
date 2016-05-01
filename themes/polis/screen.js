@@ -13,8 +13,8 @@ var defaultColors = {
 };
 
 var defaultFonts = {
-  primary: "Montserrat",
-  secondary: "Source Serif Pro, serif",
+  primary: "Montserrat, Helvetica, sans serif",
+  secondary: "Source Serif Pro, Georgia, serif",
   tertiary: "monospace"
 };
 

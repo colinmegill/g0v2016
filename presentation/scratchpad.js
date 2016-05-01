@@ -401,8 +401,8 @@ taiwan to leave
 ====== energy of revolution, bindingness of consultation
 
 
-A: matrix netflix
-B: surveys and comments - make this point over the stadium slide, about the probelms and benefits of ecah, adn then loop back to this point at the end when talking about the benefits of polis and how it is both structured and free.
+DONE A: matrix netflix
+B: surveys and comments - make this point after the stadium slide, about the probelms and benefits of ecah, adn then loop back to this point at the end when talking about the benefits of polis and how it is both structured and free.
 C: The story of VTAIWAN
   - mention negative spaces and how surveys and comments failed for vTaiwan
 
@@ -507,7 +507,7 @@ the process works like this:
   4. face to face meetings with all stakeholders framed by the results of the polis conversation
   5. administration drafts law based on results of this consultation
   6. legislature votes on that law
-  
+
 
 
 

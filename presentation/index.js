@@ -136,13 +136,9 @@ export default class Presentation extends React.Component {
     visualize it because it's hard to think about online
     you may be reading a news article with 10x that in a morning ---
 
-    What are our options? ---
-
-    landscape of opinion ---
-
-    public sphere ---
-
     midfield ---
+
+    surveys are limiting, comment boxes don't produce useful data, interviews and other qual measures are time consumeing,
 
     if you are listening to this on video after the conference,
     maybe pause and think about it - what would you do? what if everyone had a
@@ -167,13 +163,13 @@ export default class Presentation extends React.Component {
 </Slide>
 <Slide
   notes={`
-    inconvenient ---
 
-    stuffy, boring ---
+    we're locked into representative government, which means that the only way in which we're still a democracy has to do with public opinion and sentiment gathering. when and how we do this and how it affects the process.
+
+    inconvenient boring and slow ---
 
     serial ---
 
-    surveys are limiting, comment boxes don't produce useful data, interviews and other qual measures are time consumeing, pople don't show up to consultation
     `}
     bgDarken={.5}
     bgImage={images.consultation.replace("/", "")}>
