@@ -273,11 +273,6 @@
 </Slide>
 
 
-
-
-
-
-
 <Slide notes={`
   By following and sharing, you are moving information from people who you agree with to
   people who agree with you.
@@ -287,3 +282,236 @@
     `}>
   <Image width="90%" src={images.everyByEvery.replace("/", "")}/>
 </Slide>
+
+
+/*
+
+News favors instruments that are authentic to the populations. This should be interesting data to the government, but it's not orderly enough to be.
+
+The government favors polling, which is limiting, but scales.
+
+if we can bridge these problems with an instrument the data should be useful to both.
+
+news favors comments, which are chaotic, and moderates
+
+government favors polling and surveys, which are orderly but frustrating and unfulfilling.
+
+the boring government consultation is orderly
+the crowd is chaotic
+
+comments and surveys, qualitative and quantitative methods, are two worlds of pro and con that we can bridge with real time web technology and mobile everywhere.
+
+social media has aspects of both, and it's interesting, but facebook and twitter and reddit are not good or purpose built platforms for democratic discussions. they are purpose built for discovery and advertising.
+
+comments and surveys both suck. We're going to talk about some of the specific reasons they suck, what we're doing differently, why it's working in robust ways, and how it's being deployed on the national level here in Taiwan.
+
+credibility for these claims - what's NEW? real time web and machine learning, that's what. 21st century tech.
+
+
+
+=====================
+VTAIWAN
+=====================
+
+Formula for selecting seed comments:
+  * identify stakeholders (groups yelling at each other) - sent to all people
+    alcohol
+    - i usually buy alcohol in stores
+    - i am a vendor
+    - i work in logistics and transportation
+    uber
+    - i have a drivers license
+    - i have a professional drivers license
+    - i have taken uber as a passenger
+  * what do they want to hear before running consultation
+    alcohol
+    - buying online and taking in a tobacco
+    - getting a door to door delivery is as safe buying it from the store
+  * what can we promise / what can we change / how can we respond.
+    alcohol
+    - given a methodology
+    - if the identity checking is strong enough - pay by time of delivery instead of cc
+    - packaging
+  * don't show it in seed comments if it can't be promised
+
+1. surveys
+2. inform period - written, how disclosed
+3. actual consultaiton in polis
+4. face to face transcribed livestream
+
+what we can promise depends on what stage we're on. problem identification? surface the question... focus them on specific issues...
+elected officials want to talk about this - legislature has asked us about this - usually they are pressured - or go to streets
+
+if they are already on planning stage then there is already a direction... looking for something to roll out, could be narrow
+
+could end up in legislation - passed the administration, now has to go into the legislation. anything that has more than 5000 participation online usually gets passed immediately, unless they can uncover some international examples that were missed - social consensus there... all the parties are already aware
+
+admin proposed bill - can demonstrate a mandate - never got to this stage before because all the ministries didn't agree and they couldn't because their constituents couldn't... now that there is minimal agreement...
+
+this basically represents a shift in our political theory in how our constitution works
+- vTaiwan facilitator Au
+
+narrower scope - we're already set we just need a mechanism. intentionally narrowed scope of discussion.
+
+don't debate multi aspect
+
+narrow down to single aspects
+
+our consensus item is coded into an addendum of the bill - the bill tells the minister of finance to try to open the eliquer mecahnism. .. initial mechanism is vtaiwan conensus, are willing to change that based on data
+
+once the entire society is in we are willing to adjust.
+
+https://www.facebook.com/vtaiwan.tw/posts/592235774272805?comment_id=592249530938096
+
+No consultation at fourth stage - no more facts, once it's run for a year we can do a rolling evaluation of what the facts are, civil society feedback, legislator questions, or people take to the streets.
+
+fourth stage, can run a pol.is with different scopes of mandate
+
+high quality comments have:
+fact, feeling, idea
+
+great comments have both objective and subjective
+
+========= crowd source agenda - percentage of the majority group + one half of the minority group. for your voice to be heard it must get 90%... everyone in the majority... a majority in the minority... strong conensus. otherwise it's just how many people can you bring to vote.
+
+uber was 40 60 so threshold 80. if 50 50 then 75
+
+not about getting most people and your side wins
+
+reflection with expectation. sentiment people have personally - just shared by people
+
+civil society yelling - didn't realize everyone agreed with them. not just one person - 6 people arguing from their own feelings
+
+blocking an issue on principle becuase they want something ELSE to be addressed.
+
+pro EID disheartened - less than majority who say credit card alone is sufficient - most people felt that you need at least 2 factor. 45 think that EID is not sufficient - 2 factor, have to meet the person somehow. current point in eid debate. door to door - delivery person checking... grocery store checking 85% ... it's a chain and part of their job, they check for ids, delivery people do not.
+
+=========facebook advertising was done sponsored link is always a polis link - pay to distribute this.
+
+paying facebook to get people out of facebook.
+
+ministry of economy - go to amazon.com - buy and deliver to taiwan
+
+should polis have a 'subscribe to convos by vTaiwan' for polis users, vTaiwan is a publisher of conversations
+
+executive summary backed by hard data to high level officials
+
+taiwan to leave
+
+====== energy of revolution, bindingness of consultation
+
+
+A: matrix netflix
+B: surveys and comments - make this point over the stadium slide, about the probelms and benefits of ecah, adn then loop back to this point at the end when talking about the benefits of polis and how it is both structured and free.
+C: The story of VTAIWAN
+  - mention negative spaces and how surveys and comments failed for vTaiwan
+
+
+
+
+
+
+
+*/
+
+{
+  /*************
+    Algorithm of public opinion / dis
+  **************/
+}
+<Slide notes={`
+  fundamental unit of productive discussion
+  should be the idea, not the individual. ---
+
+  not a new idea, just a new medium and a new scale
+  `}>
+  <Heading> What is the algorithm of productive public discourse? </Heading>
+</Slide>
+{
+  /*************
+    ASSEMBLY
+  **************/
+}
+
+
+<Slide
+  bgImage={images.athensFromAbove.replace("/", "")}
+  bgDarken={.5}
+  notes={`
+    *as data* (Qualitative)
+    `}>
+  <Heading size={3} lineHeight={1.3}>
+    {`
+      Hear everyone out & gather perspectives
+    `}
+  </Heading>
+</Slide>
+
+<Slide
+  bgImage={images.athensFromAbove.replace("/", "")}
+  bgDarken={.5}
+  notes={`
+     & dimension (Quantitative)
+    `}>
+  <Heading size={3} lineHeight={1.3}>
+    {`
+      See what everyone thinks about each perspective
+    `}
+  </Heading>
+</Slide>
+<Slide
+  bgImage={images.athensFromAbove.replace("/", "")}
+  bgDarken={.5}
+  notes={`
+    this is roughly 'polite, fulfilling conversation'
+    `}>
+  <Heading size={3} lineHeight={1.3}>
+    {`
+      Do this for each issue
+    `}
+  </Heading>
+</Slide>
+
+
+
+
+{
+  /*************
+    REDDIT
+  **************/
+}
+
+<Slide
+  notes={`not accurate representation --- mob punishes viewpoints it doesn't agree with`}>
+  <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
+    {"A submission's score is simply the number of upvotes minus the number of downvotes. - Reddit FAQ"}
+  </Text>
+</Slide>
+
+
+
+/*
+
+from these beginngins this has grown to the national level
+
+it is a national consulative body / structure called vTaiwan
+
+spearheaded by minister jaclyn tsai in the national administration, who asked the hacker community g0v to create better consultative mechanisms.
+
+while discourse was previously being used and required three moderators, replacing it with polis requireed no moderation
+
+the process works like this:
+  1. an issue is identified and qualified as to whether it is a good issue for vTaiwain (must be digital)
+  2. identify stakeholders and gather information (government)
+  3. use facebook ads and social media sharing to draw people into the conversation
+  4. face to face meetings with all stakeholders framed by the results of the polis conversation
+  5. administration drafts law based on results of this consultation
+  6. legislature votes on that law
+  
+
+
+
+
+
+
+*/

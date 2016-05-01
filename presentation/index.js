@@ -68,7 +68,9 @@ const images = {
   leaveComment: require("../assets/leaveComment.png"),
   alien: require("../assets/alien.jpg"),
   cheeseheads: require("../assets/cheeseheads.jpg"),
-  jaclyn: require("../assets/jaclyn.png")
+  jaclyn: require("../assets/jaclyn.png"),
+  recommender: require("../assets/recommender.png"),
+  commentMatrix: require("../assets/commentMatrix.png"),
 
 
   // fergusonTweeters: require("../assets/fergusonTweeters.jpg"),
@@ -146,6 +148,22 @@ export default class Presentation extends React.Component {
     maybe pause and think about it - what would you do? what if everyone had a
     mobile phone?
   `}>
+</Slide>
+<Slide
+  notes={`
+    let's go back to the classical city state, the polis, a more human scale and see what they did ---
+
+    The crowd was endlessly passing through the Agora freely discussing issues
+
+  `}
+  bgImage={images.athensFromAbove.replace("/", "")} />
+<Slide notes={`todo`}>
+  <Image
+    style={{
+      position: "relative",
+      left: -300
+    }}
+    width="180%" src={images.assembly.replace("/", "")}/>
 </Slide>
 <Slide
   notes={`
@@ -259,14 +277,6 @@ notes={`
 
     a reply to a community a reply to a person, which is very heavy, hard to come off not as an attack.
 
-  `}
-  bgImage={images.shoutyourabortion2.replace("/", "")}>
-</Slide>
-
-<Slide
-  bgImage={images.cheeseheads.replace("/", "")}
-  bgDarken={.6}
-  notes={`
     tribe isn't a bad thing. ---
 
     People feel safe with people they relate to ---
@@ -274,20 +284,10 @@ notes={`
     intra group, not inter group. ---
 
     social media overall not a great place for inter-group argumentation ---
-    `}>
-  <Heading size={3} lineHeight={1.3}>
-    Tribe is inevitable
-  </Heading>
+
+  `}
+  bgImage={images.shoutyourabortion2.replace("/", "")}>
 </Slide>
-
-<Slide
-  notes={`not accurate representation --- mob punishes viewpoints it doesn't agree with`}>
-  <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
-    {"A submission's score is simply the number of upvotes minus the number of downvotes. - Reddit FAQ"}
-  </Text>
-</Slide>
-
-
 
 
 {
@@ -329,7 +329,14 @@ notes={`
     done automatically. ---
 
     `}>
-  <Image width="100%" src={images.matrix.replace("/", "")}/>
+  <Image style={{borderRadius: 5}} width="70%" src={images.commentMatrix.replace("/", "")}/>
+</Slide>
+<Slide
+  notes={`
+
+  `}>
+  <Image style={{borderRadius: 5}} width="70%" src={images.recommender.replace("/", "")}/>
+
 </Slide>
 <Slide notes={`todo`}>
   <Heading lineHeight={1.3}> Real-time Machine Learning </Heading>
@@ -353,102 +360,7 @@ notes={`
   <Image style={{borderRadius: 5}} width="80%" src={images.jsdc_majority.replace("/", "")}/>
 </Slide>
 
-{
-  /*************
-    Algorithm of public opinion / dis
-  **************/
-}
-<Slide notes={`
-  fundamental unit of productive discussion
-  should be the idea, not the individual. ---
 
-  not a new idea, just a new medium and a new scale
-  `}>
-  <Heading> What is the algorithm of productive public discourse? </Heading>
-</Slide>
-{
-  /*************
-    ASSEMBLY
-  **************/
-}
-<Slide
-  notes={`
-    let's go back to the classical city state, the polis, a more human scale and see what they did ---
-
-    The crowd was endlessly passing through the Agora freely discussing issues
-
-  `}
-  bgImage={images.athensFromAbove.replace("/", "")} />
-
-<Slide
-  bgImage={images.athensFromAbove.replace("/", "")}
-  bgDarken={.5}
-  notes={`
-    *as data* (Qualitative)
-    `}>
-  <Heading size={3} lineHeight={1.3}>
-    {`
-      Hear everyone out & gather perspectives
-    `}
-  </Heading>
-</Slide>
-
-<Slide
-  bgImage={images.athensFromAbove.replace("/", "")}
-  bgDarken={.5}
-  notes={`
-     & dimension (Quantitative)
-    `}>
-  <Heading size={3} lineHeight={1.3}>
-    {`
-      See what everyone thinks about each perspective
-    `}
-  </Heading>
-</Slide>
-<Slide
-  bgImage={images.athensFromAbove.replace("/", "")}
-  bgDarken={.5}
-  notes={`
-    this is roughly 'polite, fulfilling conversation'
-    `}>
-  <Heading size={3} lineHeight={1.3}>
-    {`
-      Do this for each issue
-    `}
-  </Heading>
-</Slide>
-
-<Slide
-  notes={`
-    Per issue, every opinion * every opinion on each opinion ---
-    This is all very time consuming
-    `}>
-  <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
-    {`
-      Democratic governance rests on the capacity of and opportunity for
-      citizens to engage in enlightened debate. Although deciding public
-      policy through argument has little to recommend it in terms of
-      efficiency, the purpose of public deliberation, as Aristotle recognized
-      in his Rhetoric, is not efficient government but educated judgement.
-    `}
-  </Text>
-  <Link
-    textColor="white"
-    textSize={24}
-    href="https://books.google.com/books?id=7UuCvESagZsC&lpg=PA82&ots=dNr1WC9gmm">
-    {"Gerald Hauser, On Habermas & the Public Sphere"}
-  </Link>
-</Slide>
-
-
-<Slide notes={`todo`}>
-  <Image
-    style={{
-      position: "relative",
-      left: -300
-    }}
-    width="180%" src={images.assembly.replace("/", "")}/>
-</Slide>
 
 <Slide notes={`
   how do you turn a mob into a deliberative body? ---
@@ -495,6 +407,26 @@ notes={`
     </Heading>
 </Slide>
 
+<Slide
+  notes={`
+    efficient educated judgement is the holy grail - broke a deadlock that lasted 6 years in 3months
+    `}>
+  <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
+    {`
+      Democratic governance rests on the capacity of and opportunity for
+      citizens to engage in enlightened debate. Although deciding public
+      policy through argument has little to recommend it in terms of
+      efficiency, the purpose of public deliberation, as Aristotle recognized
+      in his Rhetoric, is not efficient government but educated judgement.
+    `}
+  </Text>
+  <Link
+    textColor="white"
+    textSize={24}
+    href="https://books.google.com/books?id=7UuCvESagZsC&lpg=PA82&ots=dNr1WC9gmm">
+    {"Gerald Hauser, On Habermas & the Public Sphere"}
+  </Link>
+</Slide>
 
 <Slide notes={`
     leading the world in the implementation of digital
@@ -505,6 +437,8 @@ notes={`
 
     polis has been used in other places by other groups, adoption in Taiwan
     has been taken to its conclusion of influencing a legislative decision. ---
+
+    it is so powerful and exciting to see people have agenda setting power in vTaiwan because that's where the real power is, we started polis to break the media stranglehold on agenda setting power of the parties, we wanted agenda setting, which is the real power, to be bottom up. ---
 
     We can't fulfil our mission of building a
     tool to affect policy without a people and a government willing to engage in
