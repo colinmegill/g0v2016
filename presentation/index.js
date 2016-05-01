@@ -310,14 +310,14 @@ notes={`
 </Slide>
 <Slide notes={`
 
-    it gets you a matrix. and all those ones
-    and zeros may not seem more useful than everyone talking at once in a confused way... but the fact is that you
-    have run a kind of compression algorithm on the crowd's perspectives, an encoding you have transferred the
+    matrix ---
+    scalable ---
+    may not seem more useful ---
+    kind of compression algorithm on the crowd's perspectives, an encoding you have transferred the
     state of the crowd's opinions into a mathematical structure that statistical
     operations can be run on.
 
-    parallellize! everyone writes and votes at the same time, analysis
-    done automatically. ---
+    parallellization ---
 
     `}>
   <Image style={{borderRadius: 5}} width="70%" src={images.commentMatrix.replace("/", "")}/>
@@ -344,14 +344,13 @@ notes={`
   <Image style={{borderRadius: 5}} width="80%" src={images.jsdc_invite.replace("/", "")}/>
 </Slide>
 <Slide notes={`
-    A magical thing happened -
-    broad consensus on a community building statement of mutual respect and trust
-    it colors the other statements. it's now respectful disagreement
+    magical, consensus shows mutual respect ---
+
+    like the good of surveys, this is structured, useful data. but like commenting it's emergent, bottom up, organic, authentic.
+    has the best features of both, and overcomes the disadvantages of both.
   `}>
   <Image style={{borderRadius: 5}} width="80%" src={images.jsdc_majority.replace("/", "")}/>
 </Slide>
-
-
 
 <Slide notes={`
   how do you turn a mob into a deliberative body? ---
