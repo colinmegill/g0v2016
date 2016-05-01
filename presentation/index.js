@@ -130,19 +130,14 @@ export default class Presentation extends React.Component {
 <Slide
   bgImage={images.emirates.replace("/", "")}
   notes={`
-    so let's begin with a crowd. This one is
-    60,000 at Emirates stadium --
+    begin with crowd --
 
-    visualize it because it's hard to think about online
-    you may be reading a news article with 10x that in a morning ---
+    visualize because ---
 
     midfield ---
 
-    surveys are limiting, comment boxes don't produce useful data, interviews and other qual measures are time consumeing,
+    surveys +-, comments +-, interviews +-
 
-    if you are listening to this on video after the conference,
-    maybe pause and think about it - what would you do? what if everyone had a
-    mobile phone?
   `}>
 </Slide>
 <Slide
