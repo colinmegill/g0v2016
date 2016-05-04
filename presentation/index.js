@@ -253,9 +253,7 @@ export default class Presentation extends React.Component {
 <Slide
 notes={`
   Publishers are reaching both communities with articles, special role.
-  polis is moving forward with publishers who are trying to move beyond
-  vitriol on the comment threads below their articles and better serve
-  this unique purpose of providing common ground, mediation and moderation
+  unique position ability to provide common ground, mediation and moderation
   `}
   bgImage={images.buzzfeedGuardian.replace("/", "")} />
 <Slide
