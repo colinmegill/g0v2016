@@ -216,6 +216,8 @@ export default class Presentation extends React.Component {
   notes={`
     So let's say you do have a data scientist ---
 
+    firehose, incomprehensible volume ---
+
     The following images produced by Stanford researcher and Rhodes Scholar Emma Pierson. ---
 
     These are liberal and conservative twitter users talking about Ferguson ---
@@ -244,7 +246,7 @@ export default class Presentation extends React.Component {
     they are clusters that emerge from affinity, following your own. You are
     broadcasting ideas from people you agree with to people who agree with you. ---
 
-    discovery was the goal
+    this is a feature, not a bug: discovery was the goal
   `}>
   <Image width={"70%"} src={images.shoutyourabortion.replace("/", "")}/>
 </Slide>
@@ -353,7 +355,7 @@ notes={`
 </Slide>
 
 <Slide notes={`
-  how do you turn a mob into a deliberative body? ---
+  how do you turn a mob of citizens into a deliberative body? ---
 
   polis is just a medium, it takes people who want a better world to use it
   that, meaning all of you, is what inspires us.
@@ -372,6 +374,15 @@ notes={`
     vTaiwan as a model
   **************/
 }
+<Slide
+  bgImage={images.jaclyn.replace("/", "")}
+  notes={`
+    reaching out, saying 'make this better', extraordinary power in this
+  `}>
+    <Heading size={3} lineHeight={1.3}>
+
+    </Heading>
+</Slide>
 
 <Slide
   bgImage={images.vtaiwan.replace("/", "")}
@@ -388,14 +399,18 @@ notes={`
 </Slide>
 
 <Slide
-  bgImage={images.jaclyn.replace("/", "")}
   notes={`
 
   `}>
     <Heading size={3} lineHeight={1.3}>
-
+      The process of vTaiwan
     </Heading>
 </Slide>
+
+
+
+
+
 
 <Slide
   notes={`
@@ -418,6 +433,16 @@ notes={`
   </Link>
 </Slide>
 
+<Slide
+  notes={`
+    `}>
+  <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
+    {`
+      talkto.tw
+    `}
+  </Text>
+</Slide>
+
 <Slide notes={`
     leading the world in the implementation of digital
     democracy practices, you're doing it in the shadow of a regime that is moving
@@ -432,7 +457,9 @@ notes={`
 
     We can't fulfil our mission of building a
     tool to affect policy without a people and a government willing to engage in
-    listening, and for that we thank you too. It motivates and inspires us.
+    listening, and for that we thank you too. It motivates and inspires us. ---
+
+    together, let's change the way we talk to each other. thank you. ---
 
     run a polis convo with the crowd here?
 
