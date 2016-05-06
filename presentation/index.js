@@ -355,7 +355,7 @@ notes={`
 </Slide>
 
 <Slide notes={`
-  how do you turn a mob of citizens into a deliberative body? ---
+  how do you turn a crowd of citizens into a deliberative body? ---
 
   polis is just a medium, it takes people who want a better world to use it
   that, meaning all of you, is what inspires us.
