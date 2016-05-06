@@ -71,6 +71,8 @@ const images = {
   jaclyn: require("../assets/jaclyn.png"),
   recommender: require("../assets/recommender.png"),
   commentMatrix: require("../assets/commentMatrix.png"),
+  monocle: require("../assets/monocle.png"),
+  talkto: require("../assets/talkto.png"),
 
 
   // fergusonTweeters: require("../assets/fergusonTweeters.jpg"),
@@ -387,9 +389,8 @@ notes={`
   notes={`
     into legislative impact
     vTaiwan is a model for the world
-    Quote / discuss with Audrey
 
-    what is so extraordinary is that sunflower has been treasured and maintained and collaborated on
+    sunflower energy has been maintained & extended
   `}>
     <Heading size={3} lineHeight={1.3}>
 
@@ -398,17 +399,12 @@ notes={`
 
 <Slide
   notes={`
-
+    slide in progress
   `}>
     <Heading size={3} lineHeight={1.3}>
       The process of vTaiwan
     </Heading>
 </Slide>
-
-
-
-
-
 
 <Slide
   notes={`
@@ -433,12 +429,23 @@ notes={`
 
 <Slide
   notes={`
+    also new media gathering perspectives
+    and putting it to politicians. authentic,
+    impactful, transparent political discourse
+  `}
+  bgImage={images.talkto.replace("/", "")} />
+<Slide
+  notes={`
+    international recognition, effort recently profiled in Monocle
     `}>
-  <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
-    {`
-      talkto.tw
-    `}
-  </Text>
+  <Image style={{borderRadius: 5}} width="80%" src={images.monocle.replace("/", "")}/>
+  <Link
+    textColor="white"
+    textSize={16}
+    style={{display: "block", fontWeight: 300}}
+    href="https://monocle.com/minute/2016/04/27/#3">
+    {"Monocle Magazine"}
+  </Link>
 </Slide>
 
 <Slide notes={`
