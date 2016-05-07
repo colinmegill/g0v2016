@@ -110,37 +110,33 @@ export default class Presentation extends React.Component {
     What does a crowd think?
   **************/
 }
+
 <Slide
+  bgDarken={.3}
+  bgImage={images.emirates.replace("/", "")}
   notes={`
     this is the question our company has been trying to address with the product pol.is
     which many of you are familiar with ---
 
     every org ---
 
-    simple and fast see the answer more often ---
+    want people to see the answer more often b/c foundation of democratic behavior ---
 
-    our company infrastructure for democratic behavior, part of gov zero's function as well ---
-
-    have everyone shout out what they like ---
+    everyone shout an ingredient you are excited to cook with ---
 
     `}>
   <Heading size={3} lineHeight={1.3}>
-    What does a crowd think?
+    What does this crowd think?
   </Heading>
 </Slide>
-
 <Slide
+  bgDarken={.3}
   bgImage={images.emirates.replace("/", "")}
   notes={`
-    begin with crowd --
-
-    visualize because ---
-
-    midfield ---
-
-    surveys +-, comments +-, interviews +-
-
-  `}>
+    `}>
+  <Heading size={3} lineHeight={1.3}>
+    Democratic behavior has a scaling problem
+  </Heading>
 </Slide>
 <Slide
   notes={`
@@ -218,8 +214,6 @@ export default class Presentation extends React.Component {
   notes={`
     So let's say you do have a data scientist ---
 
-    firehose, incomprehensible volume ---
-
     The following images produced by Stanford researcher and Rhodes Scholar Emma Pierson. ---
 
     These are liberal and conservative twitter users talking about Ferguson ---
@@ -250,12 +244,15 @@ export default class Presentation extends React.Component {
 
     this is a feature, not a bug: discovery was the goal
   `}>
+  <Heading size={2} style={{marginBottom: 20}}> Homophily </Heading>
   <Image width={"70%"} src={images.shoutyourabortion.replace("/", "")}/>
 </Slide>
 <Slide
 notes={`
   Publishers are reaching both communities with articles, special role.
-  unique position ability to provide common ground, mediation and moderation
+  unique position ability to provide common ground, mediation and moderation.
+  reporting and the codifying of the narrative are naturally places of
+  conflict over that narrative.
   `}
   bgImage={images.buzzfeedGuardian.replace("/", "")} />
 <Slide
@@ -268,15 +265,15 @@ notes={`
     each other, the conversation retreats into thousands of self
     selected networks of likeminded people. ---
 
-    a reply to a community a reply to a person, which is very heavy, hard to come off not as an attack.
-
     tribe isn't a bad thing. ---
 
     People feel safe with people they relate to ---
 
     intra group, not inter group. ---
 
-    social media overall not a great place for inter-group argumentation ---
+    social media overall not a great place for inter-group argumentation
+
+    b/c a reply to a community a reply to a person, which is very heavy, hard to come off not as an attack.
 
   `}
   bgImage={images.shoutyourabortion2.replace("/", "")}>
@@ -310,6 +307,14 @@ notes={`
   `}>
   <Image style={{borderRadius: 5}} width="100%" src={images.vote.replace("/", "")}/>
 </Slide>
+<Slide notes={`todo`}>
+  <Heading lineHeight={1.3}> Real-time Machine Learning </Heading>
+</Slide>
+<Slide notes={`
+    polis identifies groups based on similar voting patterns, per conversation
+    `}>
+    <Heading lineHeight={1.3}> {`Clustering (formation of groups)`} </Heading>
+</Slide>
 <Slide notes={`
 
     matrix ---
@@ -330,14 +335,6 @@ notes={`
   `}>
   <Image style={{borderRadius: 5}} width="70%" src={images.recommender.replace("/", "")}/>
 
-</Slide>
-<Slide notes={`todo`}>
-  <Heading lineHeight={1.3}> Real-time Machine Learning </Heading>
-</Slide>
-<Slide notes={`
-  polis identifies groups based on similar voting patterns, per conversation
-  `}>
-  <Heading lineHeight={1.3}> {`Clustering (formation of groups)`} </Heading>
 </Slide>
 <Slide notes={`Allowing Qihoo employees to share tech isn't an endorsement`}>
   <Image style={{borderRadius: 5}} width="80%" src={images.jsdc_endorsement.replace("/", "")}/>

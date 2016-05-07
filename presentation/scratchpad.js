@@ -1,100 +1,3 @@
-{
-  /*************
-    PRELUDE/INTERLUDE
-  **************/
-}
-<Slide notes={`todo`}>
-  <Image width="100%" src={images.assembly.replace("/", "")}/>
-</Slide>
-{
-  /*************
-    SOLUTION
-  **************/
-}
-<Slide notes={`
-  By following and sharing, you are moving information from people who you agree with to
-  people who agree with you.
-  what if we bake in listening to the information design instead?
-  what are the actions? what information structues do they create?
-  how does that impact behavior and dispersal? following creates graphs.
-    `}>
-  <Image width="90%" src={images.everyByEvery.replace("/", "")}/>
-</Slide>
-<Slide notes={`
-    ** probably move this point but, we need to find the right
-    information structures to get what we want - if we want division
-    let's do voting and graphs. that will get us division. if we want
-    to transcend that we need to allow individual actors to move in
-    different ways with constraints that are appropriate to the culture
-    (ie saving face or elder deference) and the medium (ie., not paper anymore)
-    ** if it's bad enough, enough people won't participate that the number
-    of people this tool CAN handle will be left.
-  `}>
-  <Image width="90%" src={images.matrix.replace("/", "")}/>
-</Slide>
-<Slide notes={`todo`}>
-  <Heading> What is the algorithm of productive public discourse? </Heading>
-</Slide>
-<Slide notes={`todo`}>
-  <Heading> 1. Hear everyone out / gather perspectives & dimensions </Heading>
-</Slide>
-<Slide notes={`todo`}>
-  <Heading> 2. See what everyone thinks about each perspective & dimension </Heading>
-</Slide>
-<Slide notes={`todo`}>
-  <Heading> Per issue, every opinion * every opinion on each opinion </Heading>
-</Slide>
-<Slide notes={`todo`}>
-  <Heading> {`We're running a really expensive algorithm`} </Heading>
-</Slide>
-<Slide notes={`todo`}>
-  <Heading> {`Is it worth it?`} </Heading>
-</Slide>
-<Slide notes={`todo`}>
-  <Heading> {`Absolutely.`} </Heading>
-</Slide>
-<Slide notes={`todo`}>
-  <Heading> Opinions are heuristics for interests. </Heading>
-</Slide>
-<Slide notes={`todo`}>
-  <Heading> How do we not have a map of interests? Data. </Heading>
-</Slide>
-
-
-
-{
-  /*************
-    Robot how to argue on the internet
-  **************/
-}
-<Slide
-  notes={`
-    more enlightened members of all communities are discouraged from engaging their strongest ideas in internet common spaces.
-  `}>
-  <Image style={{borderRadius: 5}} width="80%" src={images.commentbot.replace("/", "")}/>
-</Slide>
-
-
-<Slide notes={`
-  Emergent opinion. maybe a majority of
-  americans think we need to move beyond parties. maybe that's the surprise
-  waiting when we can see majority opinion. no one will ask that in a poll.
-  no one asks likert scale questions 'on a scale of one to ten how likely do you think it is the
-  company is going to tank?' in polls, we ask only the questions we are prepared
-  to handle the answers to.
-  `}>
-  <Heading> Emergent opinion over surveys </Heading>
-</Slide>
-
-
-
-
-<Slide notes={`todo`}>
-  <Heading lineHeight={1.3}> EVERY OPINION IS DATA </Heading>
-</Slide>
-<Slide notes={`todo`}>
-  <Heading lineHeight={1.3}> REACTIONS ARE TOO </Heading>
-</Slide>
 
 <Slide notes={`
     Vital, Undirected, Chaotic, Aimless, Authentic, Surprising,
@@ -102,23 +5,15 @@
     also threatening. it implies novel solutions that may not
     include elements of the status quo.
     * what THEY have done - listened, put into practice
+
+    distributed wisdom
+
   `} bgImage={images.parisCafe.replace("/", "")} bgDarken={.7}>
   <Heading
     size={3}
     lineHeight={1.3}>
       People speaking freely in public spaces is a kind of magic.
   </Heading>
-</Slide>
-
-
-{
-  /*************
-    STATS / meta analysis
-  **************/
-}
-<Slide notes={`
-  `}>
-  <Heading>[image of voters vs commenters] 10x people willing to listen</Heading>
 </Slide>
 
 {
@@ -142,32 +37,6 @@
   <Image width="90%" src={images.pnyx.replace("/", "")}/>
 </Slide>
 
-
-<Slide notes={`
-    whoa, we're informed, we're online, we're ready, we're communicating a lot
-    `}>
-    <Image width="90%" src={images.fergusonexplosion.replace("/", "")}/>
-  </Slide>
-<Slide notes={`
-  people are discouraged. they don't show up to this.
-`}>
-<Image width="90%" src={images.oldcrowd.replace("/", "")}/>
-</Slide>
-
-
-{
-  /*************
-    STATS
-  **************/
-}
-<Slide notes={`
-  `}>
-  <Heading>[image of voters vs commenters] 10x people willing to listen</Heading>
-</Slide>
-// one, then 6 tiled
-
-
-
 <Slide
   bgImage={images.athensFromAbove.replace("/", "")}
   bgDarken={.5}
@@ -181,133 +50,9 @@
 </Slide>
 
 
-<Slide
-  notes={`
-    form follows function ---
-
-    organic and authentic to the population, data rich, civil argumentation ---
-
-    want ideas to interact
-  `}>
-  <Heading size={3} lineHeight={1.3}>
-    We need to find the right information architecture to get the outcomes we want
-  </Heading>
-</Slide>
-
-
-
-
-
-
-
-{
-  /*************
-    Quantitative
-  **************/
-}
-<Slide
-  bgImage={images.survey.replace("/", "")}
-  bgDarken={.5}>
-  <Heading size={1} lineHeight={1.3}>
-    Quantitative feedback
-  </Heading>
-</Slide>
-<Slide
-  bgImage={images.survey.replace("/", "")}
-  bgDarken={.8}
-
-  notes={`
-    scales ---
-
-    dimensions predefined ---
-
-    no emergence ---
-
-    voting is like this (party enforces agenda) ---
-
-    feels scientific
-  `}
-  >
-  <Heading size={2} >
-    Straightjacket
-  </Heading>
-</Slide>
-{
-  /*************
-  Qualitiative
-  **************/
-}
-<Slide
-  bgDarken={.6}
-  bgImage={images.leaveComment.replace("/", "")}
-
-  notes={`
-    go to them, or they come to you ---
-
-    expensive, time consuming, many steps. ---
-
-    planning, interviews, research investigation, ethnography ---
-
-    generalizable?
-  `}
-  >
-  <Heading size={1} lineHeight={1.3}>
-    Qualitative feedback
-  </Heading>
-</Slide>
-<Slide
-  notes={`
-    inconvenient ---
-
-    stuffy, boring ---
-
-    serial ---
-
-    people know it
-    `}
-    bgDarken={.5}
-    bgImage={images.consultation.replace("/", "")}>
-    <Heading size={1} lineHeight={1.3}>
-      Inefficient
-    </Heading>
-</Slide>
-
-
-<Slide notes={`
-  By following and sharing, you are moving information from people who you agree with to
-  people who agree with you.
-  what if we bake in listening to the information design instead?
-  what are the actions? what information structues do they create?
-  how does that impact behavior and dispersal? following creates graphs.
-    `}>
-  <Image width="90%" src={images.everyByEvery.replace("/", "")}/>
-</Slide>
-
-
 /*
 
-News favors instruments that are authentic to the populations. This should be interesting data to the government, but it's not orderly enough to be.
-
-The government favors polling, which is limiting, but scales.
-
-if we can bridge these problems with an instrument the data should be useful to both.
-
-news favors comments, which are chaotic, and moderates
-
-government favors polling and surveys, which are orderly but frustrating and unfulfilling.
-
-the boring government consultation is orderly
-the crowd is chaotic
-
-comments and surveys, qualitative and quantitative methods, are two worlds of pro and con that we can bridge with real time web technology and mobile everywhere.
-
-social media has aspects of both, and it's interesting, but facebook and twitter and reddit are not good or purpose built platforms for democratic discussions. they are purpose built for discovery and advertising.
-
-comments and surveys both suck. We're going to talk about some of the specific reasons they suck, what we're doing differently, why it's working in robust ways, and how it's being deployed on the national level here in Taiwan.
-
 credibility for these claims - what's NEW? real time web and machine learning, that's what. 21st century tech.
-
-
 
 =====================
 VTAIWAN
@@ -406,89 +151,7 @@ B: surveys and comments - make this point after the stadium slide, about the pro
 C: The story of VTAIWAN
   - mention negative spaces and how surveys and comments failed for vTaiwan
 
-
-
-
-
-
-
 */
-
-{
-  /*************
-    Algorithm of public opinion / dis
-  **************/
-}
-<Slide notes={`
-  fundamental unit of productive discussion
-  should be the idea, not the individual. ---
-
-  not a new idea, just a new medium and a new scale
-  `}>
-  <Heading> What is the algorithm of productive public discourse? </Heading>
-</Slide>
-{
-  /*************
-    ASSEMBLY
-  **************/
-}
-
-
-<Slide
-  bgImage={images.athensFromAbove.replace("/", "")}
-  bgDarken={.5}
-  notes={`
-    *as data* (Qualitative)
-    `}>
-  <Heading size={3} lineHeight={1.3}>
-    {`
-      Hear everyone out & gather perspectives
-    `}
-  </Heading>
-</Slide>
-
-<Slide
-  bgImage={images.athensFromAbove.replace("/", "")}
-  bgDarken={.5}
-  notes={`
-     & dimension (Quantitative)
-    `}>
-  <Heading size={3} lineHeight={1.3}>
-    {`
-      See what everyone thinks about each perspective
-    `}
-  </Heading>
-</Slide>
-<Slide
-  bgImage={images.athensFromAbove.replace("/", "")}
-  bgDarken={.5}
-  notes={`
-    this is roughly 'polite, fulfilling conversation'
-    `}>
-  <Heading size={3} lineHeight={1.3}>
-    {`
-      Do this for each issue
-    `}
-  </Heading>
-</Slide>
-
-
-
-
-{
-  /*************
-    REDDIT
-  **************/
-}
-
-<Slide
-  notes={`not accurate representation --- mob punishes viewpoints it doesn't agree with`}>
-  <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
-    {"A submission's score is simply the number of upvotes minus the number of downvotes. - Reddit FAQ"}
-  </Text>
-</Slide>
-
-
 
 /*
 
@@ -508,10 +171,142 @@ the process works like this:
   5. administration drafts law based on results of this consultation
   6. legislature votes on that law
 
-
-
-
-
-
-
 */
+
+
+/*
+  =======================
+     BLOG POSTS
+  =======================
+*/
+
+<Slide notes={`todo`}>
+  <Heading> What is the algorithm of productive public discourse? </Heading>
+</Slide>
+<Slide notes={`todo`}>
+  <Heading> 1. Hear everyone out / gather perspectives & dimensions </Heading>
+</Slide>
+<Slide notes={`todo`}>
+  <Heading> 2. See what everyone thinks about each perspective & dimension </Heading>
+</Slide>
+<Slide notes={`todo`}>
+  <Heading> Per issue, every opinion * every opinion on each opinion </Heading>
+</Slide>
+<Slide notes={`todo`}>
+  <Heading> {`We're running a really expensive algorithm`} </Heading>
+</Slide>
+
+
+<Slide notes={`todo`}>
+  <Heading> Opinions are heuristics for interests. </Heading>
+</Slide>
+<Slide notes={`todo`}>
+  <Heading> How do we not have a map of interests? Data. </Heading>
+</Slide>
+
+
+
+{
+  /*************
+    Robot how to argue on the internet
+  **************/
+}
+<Slide
+  notes={`
+    more enlightened members of all communities are discouraged from engaging their strongest ideas in internet common spaces.
+  `}>
+  <Image style={{borderRadius: 5}} width="80%" src={images.commentbot.replace("/", "")}/>
+</Slide>
+
+
+<Slide notes={`
+  Emergent opinion. maybe a majority of
+  americans think we need to move beyond parties. maybe that's the surprise
+  waiting when we can see majority opinion. no one will ask that in a poll.
+  no one asks likert scale questions 'on a scale of one to ten how likely do you think it is the
+  company is going to tank?' in polls, we ask only the questions we are prepared
+  to handle the answers to.
+  `}>
+  <Heading> Emergent opinion over surveys </Heading>
+</Slide>
+
+{
+  /*************
+    REDDIT
+  **************/
+}
+
+<Slide
+  notes={`not accurate representation --- mob punishes viewpoints it doesn't agree with`}>
+  <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
+    {"A submission's score is simply the number of upvotes minus the number of downvotes. - Reddit FAQ"}
+  </Text>
+</Slide>
+
+
+<Slide
+  notes={`
+    form follows function ---
+
+    organic and authentic to the population, data rich, civil argumentation ---
+
+    want ideas to interact
+  `}>
+  <Heading size={3} lineHeight={1.3}>
+    We need to find the right information architecture to get the outcomes we want
+  </Heading>
+</Slide>
+
+
+{
+  /*************
+    Quantitative
+  **************/
+}
+<Slide
+  bgImage={images.survey.replace("/", "")}
+  bgDarken={.8}
+
+  notes={`
+    scales ---
+
+    dimensions predefined ---
+
+    no emergence ---
+
+    voting is like this (party enforces agenda) ---
+
+    feels scientific
+  `}
+  >
+  <Heading size={2} >
+    Straightjacket
+  </Heading>
+</Slide>
+<Slide
+  notes={`
+    inconvenient ---
+
+    stuffy, boring ---
+
+    serial ---
+
+    people know it
+    `}
+    bgDarken={.5}
+    bgImage={images.consultation.replace("/", "")}>
+    <Heading size={1} lineHeight={1.3}>
+      Inefficient
+    </Heading>
+</Slide>
+
+
+<Slide notes={`
+  By following and sharing, you are moving information from people who you agree with to
+  people who agree with you.
+  what if we bake in listening to the information design instead?
+  what are the actions? what information structues do they create?
+  how does that impact behavior and dispersal? following creates graphs.
+    `}>
+  <Image width="90%" src={images.everyByEvery.replace("/", "")}/>
+</Slide>
