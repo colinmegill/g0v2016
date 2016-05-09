@@ -363,7 +363,10 @@ notes={`
 
   turning raw crowd energy into meaningful feedback --> vTaiwan.
   Making this scale and character crowd energy and feedback a daily, weekly, monthly occurrance.
-  Make it sustainable
+  Make it sustainable ---
+
+  Jaclyn reaching out to g0v, saying 'make this better', extraordinary power in this ---
+
 `} bgImage={images.sunflowerRev.replace("/", "")}/>
 
 {
@@ -374,7 +377,11 @@ notes={`
 <Slide
   bgImage={images.jaclyn.replace("/", "")}
   notes={`
-    reaching out, saying 'make this better', extraordinary power in this
+
+    "When I worked on cyberspace regulations, often I hear people saying 'Minister, this is impossible,
+    you need at least 3 years or 5 years to make progress.' But in the business world, because I've
+    been in the technology industry, technology moves much faster. We are in a world of rapid change,
+    how is it possible for each policy to always take 3 to 5 years? That's just not workable."
   `}>
     <Heading size={3} lineHeight={1.3}>
 
@@ -385,9 +392,13 @@ notes={`
   bgImage={images.vtaiwan.replace("/", "")}
   notes={`
     into legislative impact
-    vTaiwan is a model for the world
+    vTaiwan is a model for the world ---
 
-    sunflower energy has been maintained & extended
+    sunflower energy has been maintained & extended ---
+
+    civil society yelling - didn't realize everyone agreed with them. not just one person - 6 people arguing from their own feelings ---
+
+    two people on opposite sides of the issue shot down someone trying to minimize what had been accomplished, validation of methods --- 
   `}>
     <Heading size={3} lineHeight={1.3}>
 
@@ -396,7 +407,23 @@ notes={`
 
 <Slide
   notes={`
-    slide in progress
+    admin proposed bill - can demonstrate a mandate -
+    never got to this stage before because all the ministries didn't agree and they couldn't because their constituents couldn't...
+    now that there is minimal agreement... ---
+
+    vTaiwan could trace the breakdown in government process backwards to the breakdown of civil discourse,
+    encouragign because it's on the people, but only empowering if we have a way forward ---
+
+    energy of revolution, bindingness of consultation ---
+
+    facebook advertising was done sponsored link is always a polis link - pay to distribute this.
+    that's great - invest in democratic behavior as if we value it. make it quick, make it good.
+    this is a plan. it works. it is efficient, organic and robust. ---
+
+    crowd source agenda - percentage of the majority group + one half of the minority group.
+    for your voice to be heard it must get 90%...
+    everyone in the majority... a majority in the minority...
+    strong conensus. otherwise it's just how many people can you bring to vote. ---
   `}>
     <Heading size={3} lineHeight={1.3}>
       The process of vTaiwan
@@ -428,7 +455,13 @@ notes={`
   notes={`
     also new media gathering perspectives
     and putting it to politicians. authentic,
-    impactful, transparent political discourse
+    impactful, transparent political discourse ---
+
+    given the success of vTaiwan it is not hard to see the complementary nature
+    of consultative and investigative aspects - they are the same at their root ---
+
+    Guest list: Mayor of Taipei, a professor from National Taiwan University, Director of Urban Development of Taipei,
+    multiple administration officials, Simon Chang, the Premier of Taiwan
   `}
   bgImage={images.talkto.replace("/", "")} />
 <Slide
@@ -461,7 +494,10 @@ notes={`
     tool to affect policy without a people and a government willing to engage in
     listening, and for that we thank you too. It motivates and inspires us. ---
 
-    together, let's change the way we talk to each other. thank you. ---
+    good people on all sides of the problem - civil society government media who are frustrated
+    if we can realize this, that there are good people on all sides, we are free to solve the
+    problem by creating new information structures, tools and processes and solve
+    communication problems at that level ---
 
     run a polis convo with the crowd here?
 

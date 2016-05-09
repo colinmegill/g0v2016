@@ -14,7 +14,7 @@ var defaultColors = {
 
 var defaultFonts = {
   primary: "Montserrat, Helvetica, sans serif",
-  secondary: "Source Serif Pro, Georgia, serif",
+  secondary: "Montserrat, Helvetica, sans serif",
   tertiary: "monospace"
 };
 

@@ -91,7 +91,7 @@ if they are already on planning stage then there is already a direction... looki
 
 could end up in legislation - passed the administration, now has to go into the legislation. anything that has more than 5000 participation online usually gets passed immediately, unless they can uncover some international examples that were missed - social consensus there... all the parties are already aware
 
-admin proposed bill - can demonstrate a mandate - never got to this stage before because all the ministries didn't agree and they couldn't because their constituents couldn't... now that there is minimal agreement...
+$$ admin proposed bill - can demonstrate a mandate - never got to this stage before because all the ministries didn't agree and they couldn't because their constituents couldn't... now that there is minimal agreement...
 
 this basically represents a shift in our political theory in how our constitution works
 - vTaiwan facilitator Au
@@ -117,7 +117,7 @@ fact, feeling, idea
 
 great comments have both objective and subjective
 
-========= crowd source agenda - percentage of the majority group + one half of the minority group. for your voice to be heard it must get 90%... everyone in the majority... a majority in the minority... strong conensus. otherwise it's just how many people can you bring to vote.
+$$ ========= crowd source agenda - percentage of the majority group + one half of the minority group. for your voice to be heard it must get 90%... everyone in the majority... a majority in the minority... strong conensus. otherwise it's just how many people can you bring to vote.
 
 uber was 40 60 so threshold 80. if 50 50 then 75
 
@@ -125,13 +125,13 @@ not about getting most people and your side wins
 
 reflection with expectation. sentiment people have personally - just shared by people
 
-civil society yelling - didn't realize everyone agreed with them. not just one person - 6 people arguing from their own feelings
+$$ civil society yelling - didn't realize everyone agreed with them. not just one person - 6 people arguing from their own feelings
 
 blocking an issue on principle becuase they want something ELSE to be addressed.
 
 pro EID disheartened - less than majority who say credit card alone is sufficient - most people felt that you need at least 2 factor. 45 think that EID is not sufficient - 2 factor, have to meet the person somehow. current point in eid debate. door to door - delivery person checking... grocery store checking 85% ... it's a chain and part of their job, they check for ids, delivery people do not.
 
-=========facebook advertising was done sponsored link is always a polis link - pay to distribute this.
+$$ ========= facebook advertising was done sponsored link is always a polis link - pay to distribute this.
 
 paying facebook to get people out of facebook.
 
@@ -141,9 +141,7 @@ should polis have a 'subscribe to convos by vTaiwan' for polis users, vTaiwan is
 
 executive summary backed by hard data to high level officials
 
-taiwan to leave
-
-====== energy of revolution, bindingness of consultation
+$$ ====== energy of revolution, bindingness of consultation
 
 
 DONE A: matrix netflix
