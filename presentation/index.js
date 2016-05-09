@@ -115,7 +115,10 @@ export default class Presentation extends React.Component {
   bgImage={images.emirates.replace("/", "")}
   notes={`
 
-    standing at midfield ---
+    figuring out what crowds think is central to the problem of democracy.
+    our tools for figuring out what they think are seriously lacking.
+
+    emirates ---
 
     surveys +-, comments +-, interviews +-
 
@@ -143,6 +146,22 @@ export default class Presentation extends React.Component {
     <Heading size={1} lineHeight={1.3}>
       Inefficient
     </Heading>
+</Slide>
+<Slide
+  notes={`
+    let's go back to the classical city state, the polis, a more human scale and see what they did ---
+
+    The crowd was endlessly passing through the Agora freely discussing issues
+
+  `}
+  bgImage={images.athensFromAbove.replace("/", "")} />
+<Slide notes={`todo`}>
+  <Image
+    style={{
+      position: "relative",
+      left: -300
+    }}
+    width="180%" src={images.assembly.replace("/", "")}/>
 </Slide>
 <Slide
   notes={`
@@ -175,7 +194,7 @@ export default class Presentation extends React.Component {
       `}
     >
     <Heading size={3} lineHeight={1.3}>
-      Social media sentiment
+      {`Can't we just analyze social media?`}
     </Heading>
   </Slide>
 
@@ -189,17 +208,15 @@ export default class Presentation extends React.Component {
   notes={`
     So let's say you do have a data scientist ---
 
-    The following images produced by Stanford researcher and Rhodes Scholar Emma Pierson. ---
+    The following images produced by Emma Pierson Stanford researcher and Rhodes Scholar ---
 
-    These are liberal and conservative twitter users talking about Ferguson ---
+    ferguson was ---
 
-    They are ignoring each other ---
+    They are ignoring ---
 
     ferguson very controversial about race in america --
 
     the unit of interaction is affinity (person or idea) ---
-
-    what emerges from these rules is a graph. ---
 
     The filter bubble is quantifiable.
   `}

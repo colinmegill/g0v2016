@@ -213,22 +213,7 @@ the process works like this:
   <Image style={{borderRadius: 5}} width="80%" src={images.commentbot.replace("/", "")}/>
 </Slide>
 
-<Slide
-  notes={`
-    let's go back to the classical city state, the polis, a more human scale and see what they did ---
 
-    The crowd was endlessly passing through the Agora freely discussing issues
-
-  `}
-  bgImage={images.athensFromAbove.replace("/", "")} />
-<Slide notes={`todo`}>
-  <Image
-    style={{
-      position: "relative",
-      left: -300
-    }}
-    width="180%" src={images.assembly.replace("/", "")}/>
-</Slide>
 
 
 <Slide notes={`
