@@ -201,9 +201,6 @@ the process works like this:
 <Slide notes={`todo`}>
   <Heading> How do we not have a map of interests? Data. </Heading>
 </Slide>
-
-
-
 {
   /*************
     Robot how to argue on the internet
@@ -214,6 +211,23 @@ the process works like this:
     more enlightened members of all communities are discouraged from engaging their strongest ideas in internet common spaces.
   `}>
   <Image style={{borderRadius: 5}} width="80%" src={images.commentbot.replace("/", "")}/>
+</Slide>
+
+<Slide
+  notes={`
+    let's go back to the classical city state, the polis, a more human scale and see what they did ---
+
+    The crowd was endlessly passing through the Agora freely discussing issues
+
+  `}
+  bgImage={images.athensFromAbove.replace("/", "")} />
+<Slide notes={`todo`}>
+  <Image
+    style={{
+      position: "relative",
+      left: -300
+    }}
+    width="180%" src={images.assembly.replace("/", "")}/>
 </Slide>
 
 

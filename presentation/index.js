@@ -110,19 +110,20 @@ export default class Presentation extends React.Component {
     What does a crowd think?
   **************/
 }
-
 <Slide
   bgDarken={.3}
   bgImage={images.emirates.replace("/", "")}
   notes={`
-    this is the question our company has been trying to address with the product pol.is
-    which many of you are familiar with ---
+
+    standing at midfield ---
+
+    surveys +-, comments +-, interviews +-
 
     every org ---
 
-    want people to see the answer more often b/c foundation of democratic behavior ---
+    especially bad at the government level ---
 
-    everyone shout an ingredient you are excited to cook with ---
+    fundamental process of government
 
     `}>
   <Heading size={3} lineHeight={1.3}>
@@ -130,38 +131,11 @@ export default class Presentation extends React.Component {
   </Heading>
 </Slide>
 <Slide
-  bgDarken={.3}
-  bgImage={images.emirates.replace("/", "")}
-  notes={`
-    `}>
-  <Heading size={3} lineHeight={1.3}>
-    Democratic behavior has a scaling problem
-  </Heading>
-</Slide>
-<Slide
-  notes={`
-    let's go back to the classical city state, the polis, a more human scale and see what they did ---
-
-    The crowd was endlessly passing through the Agora freely discussing issues
-
-  `}
-  bgImage={images.athensFromAbove.replace("/", "")} />
-<Slide notes={`todo`}>
-  <Image
-    style={{
-      position: "relative",
-      left: -300
-    }}
-    width="180%" src={images.assembly.replace("/", "")}/>
-</Slide>
-<Slide
   notes={`
 
-    we're locked into representative government, which means that the only way in which we're still a democracy has to do with public opinion and sentiment gathering. when and how we do this and how it affects the process.
+    inconvenient, boring and slow to participants ---
 
-    inconvenient boring and slow ---
-
-    serial ---
+    incomplete to gov
 
     `}
     bgDarken={.5}
@@ -205,6 +179,7 @@ export default class Presentation extends React.Component {
     </Heading>
   </Slide>
 
+
 {
   /*************
     Emma's work
@@ -232,29 +207,22 @@ export default class Presentation extends React.Component {
 <Slide
 
   notes={`
-    does this pattern repeat? ---
+    homophily === birds of a feather ---
+
+    pattern repeats ---
 
     2.5 days of Twitter activity ---
 
     different 'communities' or, literally, parts of the Twitter graph
-    talk amongst themselves about the same topics. ---
+    talk amongst themselves about a topic ---
 
-    they are clusters that emerge from affinity, following your own. You are
+    You are
     broadcasting ideas from people you agree with to people who agree with you. ---
 
-    this is a feature, not a bug: discovery was the goal
   `}>
-  <Heading size={2} style={{marginBottom: 20}}> Homophily </Heading>
   <Image width={"70%"} src={images.shoutyourabortion.replace("/", "")}/>
 </Slide>
-<Slide
-notes={`
-  Publishers are reaching both communities with articles, special role.
-  unique position ability to provide common ground, mediation and moderation.
-  reporting and the codifying of the narrative are naturally places of
-  conflict over that narrative.
-  `}
-  bgImage={images.buzzfeedGuardian.replace("/", "")} />
+
 <Slide
   notes={`
     twitter not 'one place' ---
@@ -265,20 +233,27 @@ notes={`
     each other, the conversation retreats into thousands of self
     selected networks of likeminded people. ---
 
+    this is a feature, not a bug: built for discovery ---
+
     tribe isn't a bad thing. ---
 
     People feel safe with people they relate to ---
 
-    intra group, not inter group. ---
+    within groups, not between them ---
 
-    social media overall not a great place for inter-group argumentation
 
-    b/c a reply to a community a reply to a person, which is very heavy, hard to come off not as an attack.
 
   `}
   bgImage={images.shoutyourabortion2.replace("/", "")}>
 </Slide>
-
+<Slide
+notes={`
+  Publishers are reaching both communities with articles, special role.
+  unique position ability to provide common ground, mediation and moderation.
+  reporting and the codifying of the narrative are naturally places of
+  conflict over that narrative.
+  `}
+  bgImage={images.buzzfeedGuardian.replace("/", "")} />
 
 {
   /*************
@@ -307,14 +282,7 @@ notes={`
   `}>
   <Image style={{borderRadius: 5}} width="100%" src={images.vote.replace("/", "")}/>
 </Slide>
-<Slide notes={`todo`}>
-  <Heading lineHeight={1.3}> Real-time Machine Learning </Heading>
-</Slide>
-<Slide notes={`
-    polis identifies groups based on similar voting patterns, per conversation
-    `}>
-    <Heading lineHeight={1.3}> {`Clustering (formation of groups)`} </Heading>
-</Slide>
+
 <Slide notes={`
 
     matrix ---
@@ -331,10 +299,18 @@ notes={`
 </Slide>
 <Slide
   notes={`
-
+    but you know about this already, it's a recommender! efficient isn't really the right word, it happens in the background after
+    people take simple, natural actions in parallel.it's invisible.
   `}>
   <Image style={{borderRadius: 5}} width="70%" src={images.recommender.replace("/", "")}/>
-
+</Slide>
+<Slide notes={`todo`}>
+  <Heading lineHeight={1.3}> Real-time Machine Learning </Heading>
+</Slide>
+<Slide notes={`
+    polis identifies groups based on similar voting patterns, per conversation
+    `}>
+    <Heading lineHeight={1.3}> {`Clustering (formation of groups)`} </Heading>
 </Slide>
 <Slide notes={`Allowing Qihoo employees to share tech isn't an endorsement`}>
   <Image style={{borderRadius: 5}} width="80%" src={images.jsdc_endorsement.replace("/", "")}/>
@@ -350,25 +326,21 @@ notes={`
   `}>
   <Image style={{borderRadius: 5}} width="80%" src={images.jsdc_majority.replace("/", "")}/>
 </Slide>
+<Slide
+  notes={`
+    polis has grown ---
 
-<Slide notes={`
-  how do you turn a crowd of citizens into a deliberative body? ---
+    also new media gathering perspectives
+    and putting it to politicians. authentic,
+    impactful, transparent political discourse ---
 
-  polis is just a medium, it takes people who want a better world to use it
-  that, meaning all of you, is what inspires us.
+    given the success of vTaiwan it is not hard to see the complementary nature
+    of consultative and investigative aspects - they are the same at their root ---
 
-  as a methodology for creating change I believe we can think about digital infrastructure much the same way
-  as in the physical world, where installing an airport in a remote region
-  might encourage new growth and economic activity. Make it easy, people will do it. --
-
-  turning raw crowd energy into meaningful feedback --> vTaiwan.
-  Making this scale and character crowd energy and feedback a daily, weekly, monthly occurrance.
-  Make it sustainable ---
-
-  Jaclyn reaching out to g0v, saying 'make this better', extraordinary power in this ---
-
-`} bgImage={images.sunflowerRev.replace("/", "")}/>
-
+    Guest list: Mayor of Taipei, a professor from National Taiwan University, Director of Urban Development of Taipei,
+    multiple administration officials, Simon Chang, the Premier of Taiwan
+  `}
+  bgImage={images.talkto.replace("/", "")} />
 {
   /*************
     vTaiwan as a model
@@ -377,6 +349,8 @@ notes={`
 <Slide
   bgImage={images.jaclyn.replace("/", "")}
   notes={`
+
+    Jaclyn reaching out to g0v ---
 
     "When I worked on cyberspace regulations, often I hear people saying 'Minister, this is impossible,
     you need at least 3 years or 5 years to make progress.' But in the business world, because I've
@@ -387,7 +361,14 @@ notes={`
 
     </Heading>
 </Slide>
+<Slide notes={`
+  turning raw crowd energy into meaningful feedback --> vTaiwan. ---
 
+  Making this scale and character crowd energy and feedback a daily, weekly, monthly occurrance.
+  Make it sustainable ---
+
+
+`} bgImage={images.sunflowerRev.replace("/", "")}/>
 <Slide
   bgImage={images.vtaiwan.replace("/", "")}
   notes={`
@@ -398,7 +379,7 @@ notes={`
 
     civil society yelling - didn't realize everyone agreed with them. not just one person - 6 people arguing from their own feelings ---
 
-    two people on opposite sides of the issue shot down someone trying to minimize what had been accomplished, validation of methods --- 
+    two people on opposite sides of the issue shot down someone trying to minimize what had been accomplished, validation of methods ---
   `}>
     <Heading size={3} lineHeight={1.3}>
 
@@ -430,6 +411,8 @@ notes={`
     </Heading>
 </Slide>
 
+
+
 <Slide
   notes={`
     efficient educated judgement is the holy grail - broke a deadlock that lasted 6 years in 3months
@@ -451,32 +434,8 @@ notes={`
   </Link>
 </Slide>
 
-<Slide
-  notes={`
-    also new media gathering perspectives
-    and putting it to politicians. authentic,
-    impactful, transparent political discourse ---
 
-    given the success of vTaiwan it is not hard to see the complementary nature
-    of consultative and investigative aspects - they are the same at their root ---
 
-    Guest list: Mayor of Taipei, a professor from National Taiwan University, Director of Urban Development of Taipei,
-    multiple administration officials, Simon Chang, the Premier of Taiwan
-  `}
-  bgImage={images.talkto.replace("/", "")} />
-<Slide
-  notes={`
-    international recognition, effort recently profiled in Monocle
-    `}>
-  <Image style={{borderRadius: 5}} width="80%" src={images.monocle.replace("/", "")}/>
-  <Link
-    textColor="white"
-    textSize={16}
-    style={{display: "block", fontWeight: 300}}
-    href="https://monocle.com/minute/2016/04/27/#3">
-    {"Monocle Magazine"}
-  </Link>
-</Slide>
 
 <Slide notes={`
     leading the world in the implementation of digital
@@ -500,6 +459,9 @@ notes={`
     communication problems at that level ---
 
     run a polis convo with the crowd here?
+
+    want people to see the answer more often b/c foundation of democratic behavior ---
+
 
   `}
     bgImage={images.tain.replace("/", "")}>
