@@ -138,7 +138,8 @@ export default class Presentation extends React.Component {
 
     inconvenient, boring and slow to participants ---
 
-    incomplete to gov
+    to be clear, I'm not talking about scaling decision making directly,
+    I'm talking about scaling sentiment analysis as a proxy for that
 
     `}
     bgDarken={.5}
@@ -204,29 +205,15 @@ export default class Presentation extends React.Component {
     Emma's work
   **************/
 }
+
+
+
 <Slide
+
   notes={`
     So let's say you do have a data scientist ---
 
     The following images produced by Emma Pierson Stanford researcher and Rhodes Scholar ---
-
-    ferguson was ---
-
-    They are ignoring ---
-
-    ferguson very controversial about race in america --
-
-    the unit of interaction is affinity (person or idea) ---
-
-    The filter bubble is quantifiable.
-  `}
-  bgImage={images.fergusonTweeters.replace("/", "")} />
-<Slide
-
-  notes={`
-    homophily === birds of a feather ---
-
-    pattern repeats ---
 
     2.5 days of Twitter activity ---
 
@@ -238,6 +225,18 @@ export default class Presentation extends React.Component {
 
   `}>
   <Image width={"70%"} src={images.shoutyourabortion.replace("/", "")}/>
+</Slide>
+
+<Slide
+  notes={`
+    homophily === birds of a feather ---
+
+    pattern repeats ---
+  `}
+  >
+  <Heading size={2} lineHeight={1.3}>
+    Homophily
+  </Heading>
 </Slide>
 
 <Slide
@@ -263,14 +262,7 @@ export default class Presentation extends React.Component {
   `}
   bgImage={images.shoutyourabortion2.replace("/", "")}>
 </Slide>
-<Slide
-notes={`
-  Publishers are reaching both communities with articles, special role.
-  unique position ability to provide common ground, mediation and moderation.
-  reporting and the codifying of the narrative are naturally places of
-  conflict over that narrative.
-  `}
-  bgImage={images.buzzfeedGuardian.replace("/", "")} />
+
 
 {
   /*************
@@ -314,6 +306,7 @@ notes={`
     `}>
   <Image style={{borderRadius: 5}} width="70%" src={images.commentMatrix.replace("/", "")}/>
 </Slide>
+
 <Slide
   notes={`
     but you know about this already, it's a recommender! efficient isn't really the right word, it happens in the background after
@@ -343,42 +336,57 @@ notes={`
   `}>
   <Image style={{borderRadius: 5}} width="80%" src={images.jsdc_majority.replace("/", "")}/>
 </Slide>
+{
+  /*************
+    talkto.tw
+  **************/
+}
 <Slide
   notes={`
     polis has grown ---
-
-    also new media gathering perspectives
-    and putting it to politicians. authentic,
-    impactful, transparent political discourse ---
-
-    given the success of vTaiwan it is not hard to see the complementary nature
-    of consultative and investigative aspects - they are the same at their root ---
 
     Guest list: Mayor of Taipei, a professor from National Taiwan University, Director of Urban Development of Taipei,
     multiple administration officials, Simon Chang, the Premier of Taiwan
   `}
   bgImage={images.talkto.replace("/", "")} />
+  <Slide
+    notes={`
+      international recognition, effort recently profiled in Monocle
+      `}>
+
+    <Image style={{borderRadius: 5}} width="80%" src={images.monocle.replace("/", "")}/>
+  </Slide>
+
+  <Slide
+  notes={`
+    Publishers reaching all communities with articles, special role. ---
+
+    unique position ability to provide common ground, mediation and moderation.
+    reporting and the codifying of the narrative are naturally places of
+    conflict over that narrative. ---
+
+    new media, bridge, facilitating productive discourse, weaving satisfying conversations back into people's lives ---
+    `}
+    bgImage={images.buzzfeedGuardian.replace("/", "")} />
 {
   /*************
-    vTaiwan as a model
+    vTaiwan
   **************/
 }
+
 <Slide
   bgImage={images.jaclyn.replace("/", "")}
   notes={`
 
     Jaclyn reaching out to g0v ---
 
-    "When I worked on cyberspace regulations, often I hear people saying 'Minister, this is impossible,
-    you need at least 3 years or 5 years to make progress.' But in the business world, because I've
-    been in the technology industry, technology moves much faster. We are in a world of rapid change,
-    how is it possible for each policy to always take 3 to 5 years? That's just not workable."
-  `}>
-    <Heading size={3} lineHeight={1.3}>
 
-    </Heading>
+  `}>
 </Slide>
+
 <Slide notes={`
+  "at the time — if you remember the post-Sunflower days — the entire society was very chaotic. - Minister Jacyln Tsai" ---
+
   turning raw crowd energy into meaningful feedback --> vTaiwan. ---
 
   Making this scale and character crowd energy and feedback a daily, weekly, monthly occurrance.
@@ -386,53 +394,138 @@ notes={`
 
 
 `} bgImage={images.sunflowerRev.replace("/", "")}/>
+
 <Slide
-  bgImage={images.vtaiwan.replace("/", "")}
   notes={`
-    into legislative impact
-    vTaiwan is a model for the world ---
 
-    sunflower energy has been maintained & extended ---
-
-    civil society yelling - didn't realize everyone agreed with them. not just one person - 6 people arguing from their own feelings ---
-
-    two people on opposite sides of the issue shot down someone trying to minimize what had been accomplished, validation of methods ---
   `}>
     <Heading size={3} lineHeight={1.3}>
-
+      {"'We need to have a platform to allow the entire society to engage in rational discussion.' - Minister Jaclyn Tsai"}
     </Heading>
 </Slide>
 
 <Slide
+  bgImage={images.vtaiwan.replace("/", "")}
   notes={`
-    admin proposed bill - can demonstrate a mandate -
-    never got to this stage before because all the ministries didn't agree and they couldn't because their constituents couldn't...
-    now that there is minimal agreement... ---
+    vTaiwan is a project initiated by the government, run by helpful hackers,
+    meant to get better feedback from citizens about policies. ---
 
-    vTaiwan could trace the breakdown in government process backwards to the breakdown of civil discourse,
-    encouragign because it's on the people, but only empowering if we have a way forward ---
+    sunflower energy has been maintained & extended ---
 
-    energy of revolution, bindingness of consultation ---
+    activists didn't realize everyone agreed with them ---
 
-    facebook advertising was done sponsored link is always a polis link - pay to distribute this.
-    that's great - invest in democratic behavior as if we value it. make it quick, make it good.
-    this is a plan. it works. it is efficient, organic and robust. ---
+    two people on opposite sides of the issue ---
 
-    crowd source agenda - percentage of the majority group + one half of the minority group.
-    for your voice to be heard it must get 90%...
-    everyone in the majority... a majority in the minority...
-    strong conensus. otherwise it's just how many people can you bring to vote. ---
+    model for the world ---
+
+  `}/>
+  {
+    /*************
+      PROCESS
+    **************/
+  }
+<Slide
+  notes={`
+    energy bc bindingness of consultation ---
   `}>
     <Heading size={3} lineHeight={1.3}>
       The process of vTaiwan
     </Heading>
 </Slide>
 
+<Slide
+  notes={`
 
+  `}>
+    <Heading size={3} lineHeight={1.3}>
+      {"1: Identify & qualify an issue (stakeholders must be digitally enabled)"}
+    </Heading>
+</Slide>
 
 <Slide
   notes={`
-    efficient educated judgement is the holy grail - broke a deadlock that lasted 6 years in 3months
+    government does this part
+  `}>
+    <Heading size={3} lineHeight={1.3}>
+      {"2: Identify stakeholders & gather information"}
+    </Heading>
+</Slide>
+
+<Slide
+  notes={`
+
+  `}>
+    <Heading size={3} lineHeight={1.3}>
+      {"3: Facebook ads to target / draw people to conversation"}
+    </Heading>
+</Slide>
+
+<Slide
+  notes={`
+
+  `}>
+    <Heading size={3} lineHeight={1.3}>
+      {"4. F2F meetings with all stakeholders framed by pol.is results"}
+    </Heading>
+</Slide>
+
+<Slide
+  notes={`
+
+  `}>
+    <Heading size={3} lineHeight={1.3}>
+      {"5. Administration drafts law"}
+    </Heading>
+</Slide>
+
+<Slide
+  notes={`
+
+  `}>
+    <Heading size={3} lineHeight={1.3}>
+      {"6. legislature votes on that law"}
+    </Heading>
+</Slide>
+
+<Slide
+  notes={`
+
+  `}>
+    <Heading size={3} lineHeight={1.3}>
+      ie., online alcohol sales
+    </Heading>
+</Slide>
+
+<Slide
+  notes={`
+
+    never got to this stage before because all the ministries didn't agree and they couldn't because their constituents couldn't...
+    now that there is minimal agreement... ---
+
+    vTaiwan could trace the breakdown in government process backwards to the breakdown of civil discourse,
+    encouragign because it's on the people, but only empowering if we have a way forward ---
+
+  `}>
+    <Heading size={3} lineHeight={1.3}>
+      {`The government couldn't move forward because the constituents couldn't agree`}
+    </Heading>
+</Slide>
+
+<Slide
+  notes={`
+    "I think this is a solid platform for civil collaboration with the government. The platform has operated for a period of time, people generally trust this process of policy formulation — early-stage communication and transparency really helps. I think it should continue. I really hope g0v friends can work with the new administration after May 20." ---
+  `}>
+    <Heading size={1} lineHeight={1.3}>
+      {"Strong disagreements coexist with consensus"}
+    </Heading>
+</Slide>
+
+<Slide
+  notes={`
+    "When I worked on cyberspace regulations, often I hear people saying 'Minister, this is impossible,
+    you need at least 3 years or 5 years to make progress.' But in the business world, because I've
+    been in the technology industry, technology moves much faster. We are in a world of rapid change,
+    how is it possible for each policy to always take 3 to 5 years? That's just not workable."
     `}>
   <Text lineHeight={1.7} textAlign="left" textSize={36} textFont="Source Serif Pro">
     {`
@@ -451,34 +544,19 @@ notes={`
   </Link>
 </Slide>
 
-
-
-
 <Slide notes={`
-    leading the world in the implementation of digital
-    democracy practices, you're doing it in the shadow of a regime that is moving
+
+    inspiring the world with digital
+    democracy practices ---
+
+    shadow of a regime that is moving
     full speed in the other direction. ---
 
     deepest respect for your efforts in this regard and am humbled to able to contribute. ---
 
     polis has been used in other places by other groups, adoption in Taiwan
-    has been taken to its conclusion of influencing a legislative decision. ---
-
-    it is so powerful and exciting to see people have agenda setting power in vTaiwan because that's where the real power is, we started polis to break the media stranglehold on agenda setting power of the parties, we wanted agenda setting, which is the real power, to be bottom up. ---
-
-    We can't fulfil our mission of building a
-    tool to affect policy without a people and a government willing to engage in
-    listening, and for that we thank you too. It motivates and inspires us. ---
-
-    good people on all sides of the problem - civil society government media who are frustrated
-    if we can realize this, that there are good people on all sides, we are free to solve the
-    problem by creating new information structures, tools and processes and solve
-    communication problems at that level ---
-
-    run a polis convo with the crowd here?
-
-    want people to see the answer more often b/c foundation of democratic behavior ---
-
+    has been taken to its conclusion of influencing a legislative decision.
+    we have been able to fulfil our company's mission through your efforts ---
 
   `}
     bgImage={images.tain.replace("/", "")}>

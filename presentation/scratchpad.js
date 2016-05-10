@@ -161,13 +161,21 @@ spearheaded by minister jaclyn tsai in the national administration, who asked th
 
 while discourse was previously being used and required three moderators, replacing it with polis requireed no moderation
 
-the process works like this:
+
+$$ vTaiwan is a project initiated by the government, run by helpful hackers,
+meant to get better feedback from citizens about policies.
+
+$$ the process works like this:
   1. an issue is identified and qualified as to whether it is a good issue for vTaiwain (must be digital)
   2. identify stakeholders and gather information (government)
   3. use facebook ads and social media sharing to draw people into the conversation
   4. face to face meetings with all stakeholders framed by the results of the polis conversation
   5. administration drafts law based on results of this consultation
   6. legislature votes on that law
+
+
+
+
 
 */
 
@@ -213,6 +221,27 @@ the process works like this:
   <Image style={{borderRadius: 5}} width="80%" src={images.commentbot.replace("/", "")}/>
 </Slide>
 
+
+{
+  /*************
+    Emma's work
+  **************/
+}
+<Slide
+  notes={`
+
+
+    ferguson was ---
+
+    They are ignoring ---
+
+    ferguson very controversial about race in america --
+
+    the unit of interaction is affinity (person or idea) ---
+
+    The filter bubble is quantifiable.
+  `}
+  bgImage={images.fergusonTweeters.replace("/", "")} />
 
 
 
