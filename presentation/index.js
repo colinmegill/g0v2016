@@ -94,7 +94,15 @@ export default class Presentation extends React.Component {
     Welcome slide
   **************/
 }
-<Slide notes={`I'm colin, thank you to clkao, audrey and the gov zero team for having me`} bgColor="primary">
+<Slide notes={`
+
+  I'm colin, ---
+
+  founder of seattle based startup pol.is, uses machine learning to making online discussions scale up ---
+
+  thank you to clkao, audrey and the gov zero team for having me
+
+  `} bgColor="primary">
   <Heading size={1} fit caps lineHeight={2}>
     pol.is in Taiwan
   </Heading>
@@ -483,7 +491,7 @@ export default class Presentation extends React.Component {
 
   `}>
     <Heading size={3} lineHeight={1.3}>
-      {"6. legislature votes on that law"}
+      {"6. Legislature votes on that law"}
     </Heading>
 </Slide>
 
@@ -499,11 +507,11 @@ export default class Presentation extends React.Component {
 <Slide
   notes={`
 
-    never got to this stage before because all the ministries didn't agree and they couldn't because their constituents couldn't...
-    now that there is minimal agreement... ---
+    ministries constituents ---
+    minimal agreement... ---
 
     vTaiwan could trace the breakdown in government process backwards to the breakdown of civil discourse,
-    encouragign because it's on the people, but only empowering if we have a way forward ---
+    encouraging & empowering ---
 
   `}>
     <Heading size={3} lineHeight={1.3}>
@@ -549,14 +557,13 @@ export default class Presentation extends React.Component {
     inspiring the world with digital
     democracy practices ---
 
-    shadow of a regime that is moving
-    full speed in the other direction. ---
+    shadow ---
 
-    deepest respect for your efforts in this regard and am humbled to able to contribute. ---
+    deepest respect ---
 
-    polis has been used in other places by other groups, adoption in Taiwan
-    has been taken to its conclusion of influencing a legislative decision.
-    we have been able to fulfil our company's mission through your efforts ---
+    fulfil mission ---
+
+    thank you for sharing our vision and helping us build a better tool ---
 
   `}
     bgImage={images.tain.replace("/", "")}>
