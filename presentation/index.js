@@ -128,7 +128,7 @@ export default class Presentation extends React.Component {
 
     emirates ---
 
-    surveys +-, comments +-, interviews +-
+
 
     every org ---
 
@@ -164,7 +164,9 @@ export default class Presentation extends React.Component {
 
   `}
   bgImage={images.athensFromAbove.replace("/", "")} />
-<Slide notes={`todo`}>
+<Slide notes={`
+    surveys +-, comments +-
+  `}>
   <Image
     style={{
       position: "relative",
