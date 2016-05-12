@@ -73,6 +73,7 @@ const images = {
   commentMatrix: require("../assets/commentMatrix.png"),
   monocle: require("../assets/monocle.png"),
   talkto: require("../assets/talkto.png"),
+  alcohol_stats: require("../assets/alcohol_stats.png")
 
 
   // fergusonTweeters: require("../assets/fergusonTweeters.jpg"),
@@ -354,13 +355,13 @@ export default class Presentation extends React.Component {
     multiple administration officials, Simon Chang, the Premier of Taiwan
   `}
   bgImage={images.talkto.replace("/", "")} />
-  <Slide
-    notes={`
-      international recognition, effort recently profiled in Monocle
-      `}>
+<Slide
+  notes={`
+    international recognition, effort recently profiled in Monocle
+    `}>
 
-    <Image style={{borderRadius: 5}} width="80%" src={images.monocle.replace("/", "")}/>
-  </Slide>
+  <Image style={{borderRadius: 5}} width="80%" src={images.monocle.replace("/", "")}/>
+</Slide>
 
   <Slide
   notes={`
@@ -484,7 +485,11 @@ export default class Presentation extends React.Component {
       {"6. Legislature votes on that law"}
     </Heading>
 </Slide>
-
+{
+  /*************
+    Online alcohol sales
+  **************/
+}
 <Slide
   notes={`
 
@@ -511,7 +516,19 @@ export default class Presentation extends React.Component {
 
 <Slide
   notes={`
+    more voters than comments and commenters - consistently 10x
+    `}>
+
+  <Image style={{borderRadius: 5}} width="90%" src={images.alcohol_stats.replace("/", "")}/>
+</Slide>
+
+<Slide
+  notes={`
     "I think this is a solid platform for civil collaboration with the government. The platform has operated for a period of time, people generally trust this process of policy formulation — early-stage communication and transparency really helps. I think it should continue. I really hope g0v friends can work with the new administration after May 20." ---
+
+    in great conversations you build on shared consensus as building blocks to get to the good stuff and all learn ---
+
+    if we are not measuring consensus, how can we tell if it changes? ---
   `}>
     <Heading size={1} lineHeight={1.3}>
       {"Strong disagreements coexist with consensus"}
@@ -544,8 +561,10 @@ export default class Presentation extends React.Component {
 
 <Slide notes={`
 
-    inspiring the world with digital
-    democracy practices ---
+    at a time when governments all over are blocked by civil society's inability to communicate and find the core of what unites them,
+    at a time when the very concept of democracy is being challenged by our society's scale and the difficulty of participation,
+    what has happened here between civil society, activists, media and government is an enormous cause for hope. thank you for inspiring
+    me and showing me what is possible. May we together take this message to the world.
 
     shadow ---
 
