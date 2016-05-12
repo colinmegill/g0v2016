@@ -113,34 +113,29 @@ export default class Presentation extends React.Component {
   <Text lineHeight={2} bold textColor="tertiary">Taipei, g0v 2016</Text>
 </Slide>
 
+<Slide
+  notes={`
+
+  `}>
+  <BlockQuote>
+    <Quote>{"We need to have a platform to allow the entire society to engage in rational discussion"}</Quote>
+    <Cite>{"Minister Jaclyn Tsai"}</Cite>
+  </BlockQuote>
+</Slide>
+
 {
   /*************
-    What does a crowd think?
+    Robot how to argue on the internet
   **************/
 }
 <Slide
-  bgDarken={.3}
-  bgImage={images.emirates.replace("/", "")}
   notes={`
-
-    figuring out what crowds think is central to the problem of democracy.
-    our tools for figuring out what they think are seriously lacking.
-
-    emirates ---
-
-
-
-    every org ---
-
-    especially bad at the government level ---
-
-    fundamental process of government
-
-    `}>
-  <Heading size={3} lineHeight={1.3}>
-    What does this crowd think?
-  </Heading>
+    more enlightened members of all communities are discouraged from engaging their strongest ideas in internet common spaces.
+  `}>
+  <Image style={{borderRadius: 5}} width="80%" src={images.commentbot.replace("/", "")}/>
 </Slide>
+
+
 <Slide
   notes={`
 
@@ -405,14 +400,7 @@ export default class Presentation extends React.Component {
 
 `} bgImage={images.sunflowerRev.replace("/", "")}/>
 
-<Slide
-  notes={`
 
-  `}>
-    <Heading size={3} lineHeight={1.3}>
-      {"'We need to have a platform to allow the entire society to engage in rational discussion.' - Minister Jaclyn Tsai"}
-    </Heading>
-</Slide>
 
 <Slide
   bgImage={images.vtaiwan.replace("/", "")}

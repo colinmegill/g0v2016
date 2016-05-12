@@ -1,4 +1,36 @@
 
+
+{
+  /*************
+    What does a crowd think?
+  **************/
+}
+<Slide
+  bgDarken={.3}
+  bgImage={images.emirates.replace("/", "")}
+  notes={`
+
+    figuring out what crowds think is central to the problem of democracy.
+    our tools for figuring out what they think are seriously lacking.
+
+    emirates ---
+
+
+
+    every org ---
+
+    especially bad at the government level ---
+
+    fundamental process of government
+
+    `}>
+  <Heading size={3} lineHeight={1.3}>
+    What does this crowd think?
+  </Heading>
+</Slide>
+
+
+
 <Slide notes={`
     Vital, Undirected, Chaotic, Aimless, Authentic, Surprising,
     Interesting, Unpredictable, Emergent
@@ -208,17 +240,6 @@ $$ the process works like this:
 </Slide>
 <Slide notes={`todo`}>
   <Heading> How do we not have a map of interests? Data. </Heading>
-</Slide>
-{
-  /*************
-    Robot how to argue on the internet
-  **************/
-}
-<Slide
-  notes={`
-    more enlightened members of all communities are discouraged from engaging their strongest ideas in internet common spaces.
-  `}>
-  <Image style={{borderRadius: 5}} width="80%" src={images.commentbot.replace("/", "")}/>
 </Slide>
 
 

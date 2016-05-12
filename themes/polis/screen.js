@@ -157,10 +157,10 @@ var screen = function screen() {
         margin: 20
       },
       quote: {
-        borderLeft: "1px solid " + colors.primary,
+        borderLeft: "1px solid " + colors.secondary,
         paddingLeft: 40,
         display: "block",
-        color: colors.primary,
+        color: colors.secondary,
         fontSize: "4.9rem",
         lineHeight: 1,
         fontWeight: "bold"
