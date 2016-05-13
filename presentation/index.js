@@ -105,7 +105,7 @@ export default class Presentation extends React.Component {
 
   `} bgColor="primary">
   <Heading size={1} fit caps lineHeight={2}>
-    pol.is in Taiwan
+    pol.is in Taiwan: 跨越鴻溝
   </Heading>
   <Heading lineHeight={1.3} size={5}>
     Bridging the gap between
@@ -120,7 +120,7 @@ export default class Presentation extends React.Component {
   `}>
   <BlockQuote>
     <Quote>{"We need to have a platform to allow the entire society to engage in rational discussion"}</Quote>
-    <Cite>{"Minister Jaclyn Tsai"}</Cite>
+    <Cite>{"Minister Jaclyn Tsai 蔡玉玲"}</Cite>
   </BlockQuote>
 </Slide>
 
@@ -149,7 +149,7 @@ export default class Presentation extends React.Component {
     bgDarken={.5}
     bgImage={images.consultation.replace("/", "")}>
     <Heading size={1} lineHeight={1.3}>
-      Inefficient
+      Inefficient 冗長
     </Heading>
 </Slide>
 <Slide
@@ -201,7 +201,7 @@ export default class Presentation extends React.Component {
       `}
     >
     <Heading size={3} lineHeight={1.3}>
-      {`Can't we just analyze social media?`}
+      {`Can't we just analyze social media? 社群媒體分析`}
     </Heading>
   </Slide>
 
@@ -241,7 +241,7 @@ export default class Presentation extends React.Component {
   `}
   >
   <Heading size={2} lineHeight={1.3}>
-    Homophily
+    Homophily 趨同
   </Heading>
 </Slide>
 
@@ -283,7 +283,7 @@ export default class Presentation extends React.Component {
   `}
   >
   <Heading size={3} lineHeight={1.3}>
-    I want to tell you about a time that arguing on the internet went well.
+    I want to tell you about a time that arguing on the internet went well. 翻轉戰文！
   </Heading>
 </Slide>
 <Slide notes={`200 comment thread, fast and furious, here are the last comments`}>
@@ -321,12 +321,12 @@ export default class Presentation extends React.Component {
   <Image style={{borderRadius: 5}} width="70%" src={images.recommender.replace("/", "")}/>
 </Slide>
 <Slide notes={`todo`}>
-  <Heading lineHeight={1.3}> Real-time Machine Learning </Heading>
+  <Heading lineHeight={1.3}> Real-time Machine Learning 即時機器學習</Heading>
 </Slide>
 <Slide notes={`
     polis identifies groups based on similar voting patterns, per conversation
     `}>
-    <Heading lineHeight={1.3}> {`Clustering (formation of groups)`} </Heading>
+    <Heading lineHeight={1.3}> {`Clustering (formation of groups) 自動分群`} </Heading>
 </Slide>
 <Slide notes={`Allowing Qihoo employees to share tech isn't an endorsement`}>
   <Image style={{borderRadius: 5}} width="80%" src={images.jsdc_endorsement.replace("/", "")}/>
@@ -428,7 +428,7 @@ export default class Presentation extends React.Component {
     energy bc bindingness of consultation ---
   `}>
     <Heading size={3} lineHeight={1.3}>
-      The process of vTaiwan
+      The process of vTaiwan 正當程序
     </Heading>
 </Slide>
 
@@ -437,7 +437,7 @@ export default class Presentation extends React.Component {
 
   `}>
     <Heading size={3} lineHeight={1.3}>
-      {"1: Identify & qualify an issue (stakeholders must be digitally enabled)"}
+      {"1: Identify & qualify an issue (stakeholders must be digitally enabled) 具體政策問題規劃（各方利益關係人都必須能上網）"}
     </Heading>
 </Slide>
 
@@ -446,7 +446,7 @@ export default class Presentation extends React.Component {
     government does this part
   `}>
     <Heading size={3} lineHeight={1.3}>
-      {"2: Identify stakeholders & gather information"}
+      {"2: Identify stakeholders & gather information 連絡各方利益關係人，取得論點"}
     </Heading>
 </Slide>
 
@@ -455,7 +455,7 @@ export default class Presentation extends React.Component {
 
   `}>
     <Heading size={3} lineHeight={1.3}>
-      {"3: Facebook ads to target / draw people to conversation"}
+      {"3: Facebook ads to target / draw people to conversation 灑廣告請大家來討論"}
     </Heading>
 </Slide>
 
@@ -464,7 +464,7 @@ export default class Presentation extends React.Component {
 
   `}>
     <Heading size={3} lineHeight={1.3}>
-      {"4. F2F meetings with all stakeholders framed by pol.is results"}
+      {"4. F2F meetings with all stakeholders framed by pol.is results 利益關係人實體直播會議，議程由線上共識決定"}
     </Heading>
 </Slide>
 
@@ -473,7 +473,7 @@ export default class Presentation extends React.Component {
 
   `}>
     <Heading size={3} lineHeight={1.3}>
-      {"5. Administration drafts law"}
+      {"5. Administration drafts law 行政機關將共識轉譯成法規"}
     </Heading>
 </Slide>
 
@@ -482,7 +482,7 @@ export default class Presentation extends React.Component {
 
   `}>
     <Heading size={3} lineHeight={1.3}>
-      {"6. Legislature votes on that law"}
+      {"6. Legislature votes on that law 交由立法院審議"}
     </Heading>
 </Slide>
 {
@@ -495,7 +495,7 @@ export default class Presentation extends React.Component {
 
   `}>
     <Heading size={3} lineHeight={1.3}>
-      ie., online alcohol sales
+      ie., online alcohol sales 開放試辦網路販酒
     </Heading>
 </Slide>
 
@@ -510,7 +510,7 @@ export default class Presentation extends React.Component {
 
   `}>
     <Heading size={3} lineHeight={1.3}>
-      {`The government couldn't move forward because the constituents couldn't agree`}
+      {`The government couldn't move forward because the constituents couldn't agree 閉門會議吵了六年沒有結果`}
     </Heading>
 </Slide>
 
@@ -531,7 +531,7 @@ export default class Presentation extends React.Component {
     if we are not measuring consensus, how can we tell if it changes? ---
   `}>
     <Heading size={1} lineHeight={1.3}>
-      {"Strong disagreements coexist with consensus"}
+      {"Strong disagreements coexist with consensus 立場不同的人，也可以有共識"}
     </Heading>
 </Slide>
 
@@ -549,6 +549,7 @@ export default class Presentation extends React.Component {
       policy through argument has little to recommend it in terms of
       efficiency, the purpose of public deliberation, as Aristotle recognized
       in his Rhetoric, is not efficient government but educated judgement.
+      公民審議，是為了共同學習如何判斷，而不是一味求快
     `}
   </Text>
   <Link
