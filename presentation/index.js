@@ -131,7 +131,9 @@ export default class Presentation extends React.Component {
 }
 <Slide
   notes={`
-    more enlightened members of all communities are discouraged from engaging their strongest ideas in internet common spaces.
+    figuring out what crowds think central to democracy ---
+
+    if we solve this problem, do we help our democracy?
   `}>
   <Image style={{borderRadius: 5}} width="80%" src={images.commentbot.replace("/", "")}/>
 </Slide>
@@ -141,9 +143,6 @@ export default class Presentation extends React.Component {
   notes={`
 
     inconvenient, boring and slow to participants ---
-
-    to be clear, I'm not talking about scaling decision making directly,
-    I'm talking about scaling sentiment analysis as a proxy for that
 
     `}
     bgDarken={.5}
@@ -156,12 +155,16 @@ export default class Presentation extends React.Component {
   notes={`
     let's go back to the classical city state, the polis, a more human scale and see what they did ---
 
-    The crowd was endlessly passing through the Agora freely discussing issues
+    The crowd was endlessly passing through the Agora freely discussing issues ---
+
+    rich conversation was woven into the fabric of everyday life ---
 
   `}
   bgImage={images.athensFromAbove.replace("/", "")} />
 <Slide notes={`
-    surveys +-, comments +-
+    participation & decisions were inseperable from public discourse ---
+
+    impossible to imagine replacing with surveys +-, comments +-
   `}>
   <Image
     style={{
@@ -172,6 +175,7 @@ export default class Presentation extends React.Component {
 </Slide>
 <Slide
   notes={`
+
     sometimes the stadium shows up ---
 
     find out exactly what they think. ---
@@ -181,6 +185,7 @@ export default class Presentation extends React.Component {
     usually means something has broken down. ---
 
     the government would love to not do research like this.
+
     `}
     bgImage={images.parliament.replace("/", "")}/>
 
@@ -212,16 +217,14 @@ export default class Presentation extends React.Component {
   **************/
 }
 
-
-
 <Slide
 
   notes={`
-    So let's say you do have a data scientist ---
-
     The following images produced by Emma Pierson Stanford researcher and Rhodes Scholar ---
 
     2.5 days of Twitter activity ---
+
+    abortion ---
 
     different 'communities' or, literally, parts of the Twitter graph
     talk amongst themselves about a topic ---
@@ -235,7 +238,7 @@ export default class Presentation extends React.Component {
 
 <Slide
   notes={`
-    homophily === birds of a feather ---
+    homophily === birds of a feather flock together ---
 
     pattern repeats ---
   `}
@@ -320,7 +323,7 @@ export default class Presentation extends React.Component {
   `}>
   <Image style={{borderRadius: 5}} width="70%" src={images.recommender.replace("/", "")}/>
 </Slide>
-<Slide notes={`todo`}>
+<Slide notes={``}>
   <Heading lineHeight={1.3}> Real-time Machine Learning </Heading>
 </Slide>
 <Slide notes={`
